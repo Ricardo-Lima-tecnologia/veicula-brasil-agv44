@@ -90,47 +90,68 @@ export default function QuoteForm() {
           >
             {!submitted ? (
               <div className="relative">
-                <div className="absolute -inset-1 bg-gradient-to-br from-blue-600/20 to-blue-400/10 rounded-3xl blur-xl" />
+                {/* Outer glow ring */}
+                <div className="absolute -inset-[3px] rounded-3xl pointer-events-none" style={{ background: "linear-gradient(135deg, rgba(250,204,21,0.5), rgba(37,99,235,0.4), rgba(250,204,21,0.5))", filter: "blur(2px)" }} />
+                <div className="absolute -inset-8 rounded-[40px] pointer-events-none" style={{ background: "radial-gradient(ellipse at center, rgba(250,204,21,0.12) 0%, rgba(37,99,235,0.10) 40%, transparent 70%)" }} />
+
                 <form
                   onSubmit={handleSubmit}
-                  className="relative bg-card/80 backdrop-blur-xl border border-border/50 rounded-2xl p-6 sm:p-8 shadow-2xl shadow-blue-600/5"
+                  className="relative rounded-2xl p-6 sm:p-8"
+                  style={{
+                    background: "rgba(0,10,40,0.92)",
+                    backdropFilter: "blur(24px)",
+                    border: "1px solid rgba(250,204,21,0.25)",
+                    boxShadow: "0 0 60px rgba(250,204,21,0.10), 0 20px 60px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.06)",
+                  }}
                 >
-                  <div className="flex items-center gap-3 mb-6">
-                    <div className="w-10 h-10 rounded-xl bg-blue-600/10 flex items-center justify-center">
-                      <Shield className="w-5 h-5 text-blue-600" />
+                  {/* Header */}
+                  <div className="flex items-center gap-3 mb-6 pb-5" style={{ borderBottom: "1px solid rgba(255,255,255,0.07)" }}>
+                    <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: "linear-gradient(135deg, #FACC15 0%, #FDE68A 100%)", boxShadow: "0 4px 16px rgba(250,204,21,0.35)" }}>
+                      <Shield className="w-6 h-6 text-blue-900" />
                     </div>
                     <div>
-                      <h3 className="font-heading font-bold text-foreground">Cotação Online</h3>
-                      <p className="text-sm text-muted-foreground">Resposta em minutos</p>
+                      <h3 className="font-heading font-bold text-white text-lg">Cotação Online</h3>
+                      <p className="text-sm font-medium" style={{ color: "#FACC15" }}>Resposta em minutos ⚡</p>
                     </div>
                   </div>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     {FIELDS.map((f) => (
                       <div key={f.key} className={f.full ? "sm:col-span-2" : ""}>
-                        <Label className="text-sm font-medium text-foreground mb-1.5 block">{f.label}</Label>
+                        <Label className="text-sm font-semibold text-white/80 mb-1.5 block">{f.label}</Label>
                         <Input
                           type={f.type}
                           placeholder={f.placeholder}
                           value={form[f.key]}
                           onChange={onChange(f.key)}
                           required
-                          className="h-11 bg-background/50 border-border/60 rounded-xl focus:border-blue-500 focus:ring-blue-500/20"
+                          className="h-12 rounded-xl text-white placeholder:text-white/30 font-medium"
+                          style={{
+                            background: "rgba(255,255,255,0.06)",
+                            border: "1px solid rgba(255,255,255,0.12)",
+                          }}
                         />
                       </div>
                     ))}
                   </div>
 
-                  <Button
+                  <button
                     type="submit"
-                    size="lg"
-                    className="w-full mt-6 bg-blue-600 hover:bg-blue-500 text-white font-bold text-base py-6 rounded-xl shadow-lg shadow-blue-600/30 gap-2"
+                    className="group relative overflow-hidden w-full mt-6 py-4 rounded-xl font-heading font-bold text-base text-blue-900 transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl flex items-center justify-center gap-2"
+                    style={{
+                      background: "linear-gradient(135deg, #FACC15 0%, #FDE68A 100%)",
+                      boxShadow: "0 8px 32px rgba(250,204,21,0.40)",
+                    }}
                   >
-                    <Send className="w-5 h-5" />
-                    INICIAR MINHA COTAÇÃO
-                  </Button>
+                    <span className="relative z-10 flex items-center gap-2">
+                      <Send className="w-5 h-5" />
+                      INICIAR MINHA COTAÇÃO
+                    </span>
+                    <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ background: "linear-gradient(135deg, #FDE68A 0%, #FACC15 100%)" }} />
+                  </button>
 
-                  <p className="text-center text-xs text-muted-foreground mt-4">
+                  <p className="text-center text-xs mt-4 flex items-center justify-center gap-1.5" style={{ color: "rgba(255,255,255,0.35)" }}>
+                    <Shield className="w-3.5 h-3.5" style={{ color: "#FACC15" }} />
                     Seus dados estão protegidos e não serão compartilhados.
                   </p>
                 </form>
