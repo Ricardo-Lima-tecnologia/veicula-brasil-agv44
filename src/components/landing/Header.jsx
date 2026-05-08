@@ -70,7 +70,7 @@ export default function Header() {
               <img
                 src="https://media.base44.com/images/public/69fd4610dc407e0f852436ab/08fa4ff67_IMG_6685.png"
                 alt="Universo AGV Proteção Veicular"
-                className="h-12 lg:h-14 w-auto object-contain transition-all duration-300 group-hover:scale-105"
+                className="h-16 lg:h-16 w-auto object-contain transition-all duration-300 group-hover:scale-105"
               />
             </button>
 
