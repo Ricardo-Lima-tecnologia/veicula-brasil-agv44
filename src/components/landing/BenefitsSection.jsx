@@ -35,7 +35,7 @@ export default function BenefitsSection() {
               Veicula Brasil?
             </span>
           </h2>
-          <p className="mt-4 text-white/50 text-lg font-body">
+          <p className="mt-4 text-white/85 text-lg font-body">
             Descubra as vantagens que fazem de nós a melhor opção em proteção veicular.
           </p>
         </motion.div>
@@ -54,7 +54,7 @@ export default function BenefitsSection() {
                 <benefit.icon className="w-6 h-6 text-brand-blue-light group-hover:scale-110 transition-transform duration-300" />
               </div>
               <h3 className="font-heading font-bold text-white text-lg mb-2">{benefit.title}</h3>
-              <p className="text-white/40 text-sm leading-relaxed font-body">{benefit.desc}</p>
+              <p className="text-white/80 text-sm leading-relaxed font-body">{benefit.desc}</p>
             </motion.div>
           ))}
         </div>

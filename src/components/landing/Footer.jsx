@@ -14,7 +14,7 @@ export default function Footer() {
                 <span className="text-[9px] text-brand-blue-light font-semibold tracking-[0.2em]">PROTEÇÃO VEICULAR</span>
               </div>
             </div>
-            <p className="text-white/40 text-sm leading-relaxed font-body">
+            <p className="text-white/75 text-sm leading-relaxed font-body">
               Proteção veicular completa com assistência 24h em todo o Brasil. Economia, segurança e tranquilidade para você e sua família.
             </p>
           </div>
@@ -27,7 +27,7 @@ export default function Footer() {
                 <li key={label}>
                   <button
                     onClick={() => document.querySelector(`#${label.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")}`).scrollIntoView({ behavior: "smooth" })}
-                    className="text-white/40 hover:text-brand-blue-light transition-colors text-sm font-body"
+                    className="text-white/70 hover:text-brand-blue-light transition-colors text-sm font-body"
                   >
                     {label}
                   </button>
@@ -40,15 +40,15 @@ export default function Footer() {
           <div>
             <h4 className="font-heading font-bold text-white mb-4 text-sm uppercase tracking-wider">Contato</h4>
             <ul className="space-y-3">
-              <li className="flex items-center gap-2 text-white/40 text-sm">
+              <li className="flex items-center gap-2 text-white/75 text-sm">
                 <Phone className="w-4 h-4 text-brand-blue-light flex-shrink-0" />
                 <span>WhatsApp: (00) 00000-0000</span>
               </li>
-              <li className="flex items-center gap-2 text-white/40 text-sm">
+              <li className="flex items-center gap-2 text-white/75 text-sm">
                 <Mail className="w-4 h-4 text-brand-blue-light flex-shrink-0" />
                 <span>contato@veiculabrasilagv.com.br</span>
               </li>
-              <li className="flex items-start gap-2 text-white/40 text-sm">
+              <li className="flex items-start gap-2 text-white/75 text-sm">
                 <MapPin className="w-4 h-4 text-brand-blue-light flex-shrink-0 mt-0.5" />
                 <span>Atendimento em todo o Brasil</span>
               </li>

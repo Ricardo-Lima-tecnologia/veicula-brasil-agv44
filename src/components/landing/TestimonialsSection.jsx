@@ -146,7 +146,7 @@ function TestimonialCard({ t, index, isActive }) {
         <StarRow count={t.stars} />
 
         {/* Text */}
-        <p className="mt-4 text-white/65 text-sm leading-relaxed flex-1 font-body">
+        <p className="mt-4 text-white/90 text-sm leading-relaxed flex-1 font-body">
           {parseText(t.text)}
         </p>
 
@@ -154,7 +154,7 @@ function TestimonialCard({ t, index, isActive }) {
         {t.vehicle && (
           <div className="mt-4 flex items-center gap-2">
             <Shield className="w-3.5 h-3.5 flex-shrink-0" style={{ color: "rgba(37,99,235,0.7)" }} />
-            <span className="text-[11px] text-white/35 font-body">Veículo: {t.vehicle}</span>
+            <span className="text-[11px] text-white/70 font-body">Veículo: {t.vehicle}</span>
           </div>
         )}
 
@@ -179,7 +179,7 @@ function TestimonialCard({ t, index, isActive }) {
           </div>
           <div>
             <p className="text-white font-heading font-bold text-sm">{t.name}</p>
-            <p className="text-white/40 text-xs flex items-center gap-1 mt-0.5">
+            <p className="text-white/70 text-xs flex items-center gap-1 mt-0.5">
               <MapPin className="w-2.5 h-2.5" />
               {t.location}
             </p>
@@ -306,7 +306,7 @@ export default function TestimonialsSection() {
               </div>
               <div>
                 <p className="text-white font-heading font-bold text-base leading-none">{stat.value}</p>
-                <p className="text-white/45 text-xs mt-0.5">{stat.label}</p>
+                <p className="text-white/80 text-xs mt-0.5">{stat.label}</p>
               </div>
             </motion.div>
           ))}
@@ -340,7 +340,7 @@ export default function TestimonialsSection() {
             </span>
           </h2>
 
-          <p className="mt-5 text-white/55 text-lg leading-relaxed font-body">
+          <p className="mt-5 text-white/85 text-lg leading-relaxed font-body">
             Milhares de clientes já confiam na nossa proteção veicular em todo o Brasil.
             Veja o que eles dizem sobre a experiência.
           </p>
@@ -355,7 +355,7 @@ export default function TestimonialsSection() {
             </div>
             <div className="h-4 w-px bg-white/20" />
             <span className="text-white font-bold text-lg">4.9</span>
-            <span className="text-white/45 text-sm">— Mais de 2.000 avaliações</span>
+            <span className="text-white/80 text-sm">— Mais de 2.000 avaliações</span>
           </div>
         </motion.div>
 
@@ -394,7 +394,7 @@ export default function TestimonialsSection() {
                 Faça parte dos motoristas que já protegem{" "}
                 <span style={{ color: "#FACC15" }}>seus veículos com tranquilidade.</span>
               </h3>
-              <p className="mt-3 text-white/50 font-body">
+              <p className="mt-3 text-white/85 font-body">
                 Sem burocracia. Sem análise de perfil. Ativação em até 24 horas.
               </p>
 

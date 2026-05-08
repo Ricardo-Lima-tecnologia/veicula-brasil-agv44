@@ -32,7 +32,7 @@ export default function FinalCTA() {
             </span>
           </h2>
 
-          <p className="mt-6 text-white/50 text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed font-body">
+          <p className="mt-6 text-white/85 text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed font-body">
             Faça sua cotação gratuita e fale agora com nossa equipe especializada.
             Não deixe seu patrimônio desprotegido.
           </p>
@@ -61,7 +61,7 @@ export default function FinalCTA() {
             </Button>
           </div>
 
-          <p className="mt-8 text-white/30 text-sm font-body">
+          <p className="mt-8 text-white/60 text-sm font-body">
             Mais de 10.000 veículos protegidos em todo o Brasil
           </p>
         </motion.div>

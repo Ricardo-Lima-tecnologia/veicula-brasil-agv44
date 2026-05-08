@@ -121,7 +121,7 @@ export default function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.25 }}
-              className="mt-6 text-base sm:text-lg text-white/65 max-w-md leading-relaxed font-body"
+              className="mt-6 text-base sm:text-lg text-white/90 max-w-md leading-relaxed font-body"
             >
               Proteja seu veículo contra roubo, furto e colisão com assistência 24h
               em todo o Brasil. Atendimento humanizado e aprovação imediata.
@@ -139,7 +139,7 @@ export default function HeroSection() {
                   <div className="w-5 h-5 rounded-full bg-green-500/20 border border-green-400/40 flex items-center justify-center flex-shrink-0">
                     <CheckCircle2 className="w-3 h-3 text-green-400" />
                   </div>
-                  <span className="text-sm text-white/80 font-medium font-body">{item}</span>
+                  <span className="text-sm text-white font-medium font-body">{item}</span>
                 </div>
               ))}
             </motion.div>
@@ -190,8 +190,8 @@ export default function HeroSection() {
                   <Star key={i} className="w-4 h-4 text-yellow-400 fill-yellow-400" />
                 ))}
               </div>
-              <span className="text-white/50 text-sm font-body">
-                4.9 — Mais de <span className="text-white/80 font-semibold">2.000 avaliações</span>
+              <span className="text-white/80 text-sm font-body">
+                4.9 — Mais de <span className="text-white font-semibold">2.000 avaliações</span>
               </span>
             </motion.div>
           </motion.div>
@@ -253,7 +253,7 @@ export default function HeroSection() {
                     <b.icon className="w-4 h-4 text-yellow-400 flex-shrink-0" />
                     <div className="leading-none">
                       <p className="text-white font-bold text-[10px] sm:text-xs">{b.label}</p>
-                      <p className="text-white/55 text-[9px] sm:text-[10px] mt-0.5">{b.sub}</p>
+                      <p className="text-white/85 text-[9px] sm:text-[10px] mt-0.5">{b.sub}</p>
                     </div>
                   </motion.div>
                 ))}
@@ -269,7 +269,7 @@ export default function HeroSection() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.2 }}
-        className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 text-white/30 text-xs font-body cursor-pointer"
+        className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 text-white/60 text-xs font-body cursor-pointer"
         onClick={() => scrollTo("#servicos")}
       >
         <span className="tracking-widest uppercase text-[10px]">Saiba mais</span>

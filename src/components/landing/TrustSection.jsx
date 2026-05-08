@@ -114,8 +114,8 @@ function ServiceCard({ service, index }) {
       <h3 className="font-heading font-bold text-white text-base mb-2 leading-tight">
         {service.title}
       </h3>
-      <p className="text-white/45 text-sm leading-relaxed font-body">
-        {service.desc}
+      <p className="text-white/80 text-sm leading-relaxed font-body">
+      {service.desc}
       </p>
 
       {/* Bottom accent line */}
@@ -232,7 +232,7 @@ export default function TrustSection() {
             </span>
           </h2>
 
-          <p className="mt-5 text-white/50 text-lg leading-relaxed font-body">
+          <p className="mt-5 text-white/85 text-lg leading-relaxed font-body">
             Serviços desenvolvidos para oferecer mais segurança, tranquilidade e suporte
             para você e sua família em qualquer situação.
           </p>
@@ -275,7 +275,7 @@ export default function TrustSection() {
                 Proteja seu veículo com quem{" "}
                 <span style={{ color: "#FACC15" }}>entende do assunto.</span>
               </h3>
-              <p className="mt-3 text-white/45 font-body">
+              <p className="mt-3 text-white/80 font-body">
                 Cobertura completa, atendimento humanizado e ativação em até 24 horas.
               </p>
 

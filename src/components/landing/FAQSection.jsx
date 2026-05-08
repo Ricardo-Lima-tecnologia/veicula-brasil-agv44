@@ -75,7 +75,7 @@ export default function FAQSection() {
                     <span>{faq.q}</span>
                   </div>
                 </AccordionTrigger>
-                <AccordionContent className="text-white/55 leading-relaxed font-body pb-5 pl-8">
+                <AccordionContent className="text-white/90 leading-relaxed font-body pb-5 pl-8">
                   {faq.a}
                 </AccordionContent>
               </AccordionItem>
