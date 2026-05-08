@@ -299,7 +299,7 @@ export default function TrustSection() {
                 </button>
 
                 <a
-                  href="https://wa.me/5500000000000?text=Ol%C3%A1%2C%20gostaria%20de%20iniciar%20minha%20cota%C3%A7%C3%A3o%20de%20prote%C3%A7%C3%A3o%20veicular."
+                  href="https://wa.me/5561985991662?text=Ol%C3%A1%2C%20gostaria%20de%20iniciar%20minha%20cota%C3%A7%C3%A3o%20de%20prote%C3%A7%C3%A3o%20veicular."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-4 rounded-xl font-semibold text-white border border-green-400/30 hover:border-green-400/60 hover:bg-green-500/10 hover:scale-[1.03] transition-all duration-300 text-sm"

@@ -42,7 +42,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-center gap-2 text-white/75 text-sm">
                 <Phone className="w-4 h-4 text-brand-blue-light flex-shrink-0" />
-                <span>WhatsApp: (00) 00000-0000</span>
+                <span>WhatsApp: (61) 98599-1662</span>
               </li>
               <li className="flex items-center gap-2 text-white/75 text-sm">
                 <Mail className="w-4 h-4 text-brand-blue-light flex-shrink-0" />

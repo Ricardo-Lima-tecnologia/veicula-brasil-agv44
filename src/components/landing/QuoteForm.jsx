@@ -28,7 +28,7 @@ export default function QuoteForm() {
     );
 
     setTimeout(() => {
-      window.open(`https://wa.me/5500000000000?text=${msg}`, "_blank");
+      window.open(`https://wa.me/5561985991662?text=${msg}`, "_blank");
     }, 1500);
   };
 
