@@ -30,33 +30,7 @@ const TESTIMONIALS = [
     highlight: "Aprovação sem burocracia",
     stars: 5,
   },
-  {
-    name: "Fernanda Oliveira",
-    location: "Curitiba, PR",
-    vehicle: "Hyundai HB20 2022",
-    img: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=200&h=200&fit=crop&crop=face",
-    text: "Fui super bem atendida desde o primeiro contato. A equipe explicou tudo com calma, **sem letras miúdas ou surpresas**. Tive uma pane elétrica no meio da estrada e o socorro chegou rapidinho. **Proteção de verdade!**",
-    highlight: "Suporte transparente",
-    stars: 5,
-  },
-  {
-    name: "Marcelo Souza",
-    location: "Brasília, DF",
-    vehicle: "Chevrolet Onix 2023",
-    img: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=200&h=200&fit=crop&crop=face",
-    text: "Já indiquei para mais de 10 amigos e todos ficaram satisfeitos. O **custo-benefício é incomparável** — pago um valor justo e tenho cobertura completa em todo o Brasil. A **paz de espírito** que isso traz não tem preço.",
-    highlight: "Indicou para 10 amigos",
-    stars: 5,
-  },
-  {
-    name: "Juliana Ferreira",
-    location: "Porto Alegre, RS",
-    vehicle: "Volkswagen T-Cross 2022",
-    img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=200&fit=crop&crop=face",
-    text: "Tive uma colisão na rodovia e fiquei desesperada. A equipe me atendeu com **muita empatia e rapidez**. Todo o processo foi resolvido de forma **transparente e ágil**. Hoje me sinto protegida onde quer que eu vá no Brasil.",
-    highlight: "Atendimento com empatia",
-    stars: 5,
-  },
+
 ];
 
 const TRUST_STATS = [
