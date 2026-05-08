@@ -33,7 +33,7 @@ export default function TestimonialsSection() {
   const t = TESTIMONIALS[current];
 
   return (
-    <section id="depoimentos" className="py-20 lg:py-28 bg-navy-900 relative overflow-hidden">
+    <section id="depoimentos" className="py-20 lg:py-28 bg-brand-navy relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(37,99,235,0.06),transparent_60%)]" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -44,12 +44,12 @@ export default function TestimonialsSection() {
           transition={{ duration: 0.6 }}
           className="text-center max-w-2xl mx-auto mb-16"
         >
-          <span className="inline-block px-4 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-sm font-semibold mb-4">
+          <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-brand-blue-light text-sm font-semibold mb-4">
             Depoimentos
           </span>
           <h2 className="font-heading font-extrabold text-3xl sm:text-4xl lg:text-5xl text-white">
             O que nossos{" "}
-            <span className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-brand-blue-light to-primary bg-clip-text text-transparent">
               clientes dizem
             </span>
           </h2>
@@ -77,12 +77,12 @@ export default function TestimonialsSection() {
                 <img
                   src={t.img}
                   alt={t.name}
-                  className="w-14 h-14 rounded-full object-cover border-2 border-blue-500/30"
+                  className="w-14 h-14 rounded-full object-cover border-2 border-primary/30"
                 />
                 <div>
                   <div className="flex items-center gap-2">
                     <h4 className="font-heading font-bold text-white">{t.name}</h4>
-                    <BadgeCheck className="w-4 h-4 text-blue-400" />
+                    <BadgeCheck className="w-4 h-4 text-brand-blue-light" />
                   </div>
                   <p className="text-white/40 text-sm">{t.role}</p>
                 </div>
@@ -105,7 +105,7 @@ export default function TestimonialsSection() {
                   key={i}
                   onClick={() => setCurrent(i)}
                   className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
-                    i === current ? "bg-blue-500 w-8" : "bg-white/20 hover:bg-white/40"
+                    i === current ? "bg-primary w-8" : "bg-white/20 hover:bg-white/40"
                   }`}
                 />
               ))}

@@ -14,7 +14,7 @@ const BENEFITS = [
 
 export default function BenefitsSection() {
   return (
-    <section id="beneficios" className="py-20 lg:py-28 bg-navy-900 relative overflow-hidden">
+    <section id="beneficios" className="py-20 lg:py-28 bg-brand-navy relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(37,99,235,0.08),transparent_60%)]" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(59,130,246,0.06),transparent_50%)]" />
 
@@ -26,12 +26,12 @@ export default function BenefitsSection() {
           transition={{ duration: 0.6 }}
           className="text-center max-w-2xl mx-auto mb-16"
         >
-          <span className="inline-block px-4 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-sm font-semibold mb-4">
+          <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-brand-blue-light text-sm font-semibold mb-4">
             Vantagens Exclusivas
           </span>
           <h2 className="font-heading font-extrabold text-3xl sm:text-4xl lg:text-5xl text-white">
             Por que escolher a{" "}
-            <span className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-brand-blue-light to-primary bg-clip-text text-transparent">
               Veicula Brasil?
             </span>
           </h2>
@@ -48,10 +48,10 @@ export default function BenefitsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.07 }}
-              className="group relative p-6 rounded-2xl bg-white/[0.03] border border-white/[0.06] backdrop-blur-sm hover:bg-white/[0.06] hover:border-blue-500/20 transition-all duration-500"
+              className="group relative p-6 rounded-2xl bg-white/[0.03] border border-white/[0.06] backdrop-blur-sm hover:bg-white/[0.06] hover:border-primary/20 transition-all duration-500"
             >
-              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-600/20 to-blue-400/10 flex items-center justify-center mb-4 group-hover:from-blue-600/30 group-hover:to-blue-400/20 transition-all duration-300">
-                <benefit.icon className="w-6 h-6 text-blue-400 group-hover:scale-110 transition-transform duration-300" />
+              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary/20 to-brand-blue-light/10 flex items-center justify-center mb-4 group-hover:from-primary/30 group-hover:to-brand-blue-light/20 transition-all duration-300">
+                <benefit.icon className="w-6 h-6 text-brand-blue-light group-hover:scale-110 transition-transform duration-300" />
               </div>
               <h3 className="font-heading font-bold text-white text-lg mb-2">{benefit.title}</h3>
               <p className="text-white/40 text-sm leading-relaxed font-body">{benefit.desc}</p>

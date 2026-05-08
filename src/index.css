@@ -9,74 +9,89 @@
     --font-heading: 'Plus Jakarta Sans', sans-serif;
     --font-body: 'Inter', sans-serif;
 
+    /* Brand palette — blue corporate */
+    --brand-blue:        217 91% 52%;   /* #2563EB main blue     */
+    --brand-blue-light:  213 93% 67%;   /* #60A5FA lighter blue  */
+    --brand-navy:        218 65% 11%;   /* #0F2040 deep navy     */
+    --brand-navy-mid:    218 55% 16%;   /* #162947 mid navy      */
+    --brand-yellow:      45 96% 58%;    /* #F9C826 CTA yellow    */
+
+    /* System tokens — light mode */
     --background: 210 40% 98%;
-    --foreground: 215 35% 10%;
+    --foreground: 218 40% 12%;
     --card: 0 0% 100%;
-    --card-foreground: 215 35% 10%;
+    --card-foreground: 218 40% 12%;
     --popover: 0 0% 100%;
-    --popover-foreground: 215 35% 10%;
-    --primary: 217 91% 60%;
+    --popover-foreground: 218 40% 12%;
+    --primary: var(--brand-blue);
     --primary-foreground: 0 0% 100%;
-    --secondary: 215 25% 95%;
-    --secondary-foreground: 215 35% 15%;
-    --muted: 214 20% 96%;
+    --secondary: 214 30% 94%;
+    --secondary-foreground: 218 40% 18%;
+    --muted: 213 25% 96%;
     --muted-foreground: 215 15% 50%;
-    --accent: 217 91% 60%;
+    --accent: var(--brand-blue);
     --accent-foreground: 0 0% 100%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 214 20% 90%;
-    --input: 214 20% 90%;
-    --ring: 217 91% 60%;
-    --chart-1: 217 91% 60%;
+    --border: 214 22% 88%;
+    --input: 214 22% 88%;
+    --ring: var(--brand-blue);
+    --radius: 0.75rem;
+
+    /* Dark sections — used via CSS class .section-dark */
+    --section-dark-bg:   var(--brand-navy);
+    --section-dark-mid:  var(--brand-navy-mid);
+
+    --chart-1: var(--brand-blue);
     --chart-2: 173 58% 39%;
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
-    --radius: 0.75rem;
+
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary: var(--brand-blue);
     --sidebar-primary-foreground: 0 0% 98%;
     --sidebar-accent: 240 4.8% 95.9%;
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217 91% 60%;
+    --sidebar-ring: var(--brand-blue);
   }
 
+  /* Dark sections share the same brand tokens */
   .dark {
-    --background: 215 50% 5%;
-    --foreground: 0 0% 98%;
-    --card: 215 45% 8%;
-    --card-foreground: 0 0% 98%;
-    --popover: 215 45% 8%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 217 91% 60%;
+    --background: var(--brand-navy);
+    --foreground: 0 0% 96%;
+    --card: var(--brand-navy-mid);
+    --card-foreground: 0 0% 96%;
+    --popover: var(--brand-navy-mid);
+    --popover-foreground: 0 0% 96%;
+    --primary: var(--brand-blue);
     --primary-foreground: 0 0% 100%;
-    --secondary: 215 30% 14%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 215 30% 14%;
-    --muted-foreground: 215 15% 60%;
-    --accent: 217 91% 60%;
+    --secondary: 218 45% 20%;
+    --secondary-foreground: 0 0% 96%;
+    --muted: 218 45% 18%;
+    --muted-foreground: 215 18% 60%;
+    --accent: var(--brand-blue);
     --accent-foreground: 0 0% 100%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
-    --border: 215 30% 18%;
-    --input: 215 30% 18%;
-    --ring: 217 91% 60%;
-    --chart-1: 220 70% 50%;
+    --border: 218 40% 22%;
+    --input: 218 40% 22%;
+    --ring: var(--brand-blue);
+    --chart-1: var(--brand-blue);
     --chart-2: 160 60% 45%;
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
-    --sidebar-background: 215 50% 5%;
+    --sidebar-background: var(--brand-navy);
     --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary: var(--brand-blue);
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 215 30% 14%;
+    --sidebar-accent: 218 45% 20%;
     --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 215 30% 18%;
-    --sidebar-ring: 217 91% 60%;
+    --sidebar-border: 218 40% 22%;
+    --sidebar-ring: var(--brand-blue);
   }
 }
 

@@ -16,11 +16,17 @@ module.exports = {
       colors: {
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
+        brand: {
+          blue: 'hsl(var(--brand-blue))',
+          'blue-light': 'hsl(var(--brand-blue-light))',
+          navy: 'hsl(var(--brand-navy))',
+          'navy-mid': 'hsl(var(--brand-navy-mid))',
+          yellow: 'hsl(var(--brand-yellow))',
+        },
+        /* keep navy aliases for any legacy classes */
         navy: {
-          900: '#0A1628',
-          800: '#0F2847',
-          700: '#142F52',
-          600: '#1A3A63',
+          900: 'hsl(var(--brand-navy))',
+          800: 'hsl(var(--brand-navy-mid))',
         },
         card: {
           DEFAULT: 'hsl(var(--card))',

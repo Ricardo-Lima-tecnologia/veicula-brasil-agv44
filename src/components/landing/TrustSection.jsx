@@ -15,7 +15,7 @@ const SERVICES = [
 export default function TrustSection() {
   return (
     <section id="servicos" className="py-20 lg:py-28 bg-background relative overflow-hidden">
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/5 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
@@ -25,12 +25,12 @@ export default function TrustSection() {
           transition={{ duration: 0.6 }}
           className="text-center max-w-2xl mx-auto mb-16"
         >
-          <span className="inline-block px-4 py-1.5 rounded-full bg-blue-600/10 text-blue-600 text-sm font-semibold mb-4">
+          <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-semibold mb-4">
             Nossos Serviços
           </span>
           <h2 className="font-heading font-extrabold text-3xl sm:text-4xl lg:text-5xl text-foreground">
             Proteção que você{" "}
-            <span className="bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">merece</span>
+            <span className="bg-gradient-to-r from-primary to-brand-blue-light bg-clip-text text-transparent">merece</span>
           </h2>
           <p className="mt-4 text-muted-foreground text-lg font-body">
             Oferecemos cobertura completa e serviços premium para manter seu veículo protegido em qualquer situação.
@@ -45,12 +45,12 @@ export default function TrustSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.07 }}
-              className="group relative p-6 rounded-2xl bg-card border border-border/50 hover:border-blue-500/30 transition-all duration-500 hover:shadow-xl hover:shadow-blue-600/5 cursor-default"
+              className="group relative p-6 rounded-2xl bg-card border border-border/50 hover:border-primary/30 transition-all duration-500 hover:shadow-xl hover:shadow-primary/5 cursor-default"
             >
-              <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-blue-600/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               <div className="relative z-10">
-                <div className="w-12 h-12 rounded-xl bg-blue-600/10 flex items-center justify-center mb-4 group-hover:bg-blue-600/20 transition-colors duration-300">
-                  <service.icon className="w-6 h-6 text-blue-600 group-hover:scale-110 transition-transform duration-300" />
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors duration-300">
+                  <service.icon className="w-6 h-6 text-primary group-hover:scale-110 transition-transform duration-300" />
                 </div>
                 <h3 className="font-heading font-bold text-foreground text-lg mb-2">{service.title}</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed font-body">{service.desc}</p>

@@ -35,17 +35,17 @@ export default function Header() {
       transition={{ duration: 0.6 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-navy-900/90 backdrop-blur-xl shadow-2xl shadow-black/20 border-b border-white/5"
+          ? "bg-brand-navy/90 backdrop-blur-xl shadow-2xl shadow-black/20 border-b border-white/5"
           : "bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           <div className="flex items-center gap-2">
-            <Shield className="w-8 h-8 text-blue-400" />
+            <Shield className="w-8 h-8 text-brand-blue-light" />
             <div className="flex flex-col leading-none">
               <span className="font-heading font-bold text-white text-lg tracking-tight">VEICULA BRASIL</span>
-              <span className="text-[10px] text-blue-400 font-semibold tracking-[0.25em]">PROTEÇÃO VEICULAR</span>
+              <span className="text-[10px] text-brand-blue-light font-semibold tracking-[0.25em]">PROTEÇÃO VEICULAR</span>
             </div>
           </div>
 
@@ -74,7 +74,7 @@ export default function Header() {
             </a>
             <Button
               onClick={() => scrollTo("#cotacao")}
-              className="bg-blue-600 hover:bg-blue-500 text-white font-semibold px-6 shadow-lg shadow-blue-600/30"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-6 shadow-lg shadow-primary/30"
             >
               Fazer Cotação
             </Button>
@@ -95,7 +95,7 @@ export default function Header() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden bg-navy-900/98 backdrop-blur-xl border-t border-white/5"
+            className="lg:hidden bg-brand-navy/98 backdrop-blur-xl border-t border-white/5"
           >
             <div className="px-4 py-4 space-y-1">
               {NAV_LINKS.map((link) => (
@@ -110,7 +110,7 @@ export default function Header() {
               <div className="pt-3 flex flex-col gap-2">
                 <Button
                   onClick={() => scrollTo("#cotacao")}
-                  className="w-full bg-blue-600 hover:bg-blue-500 text-white font-semibold shadow-lg"
+                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold shadow-lg"
                 >
                   Fazer Cotação
                 </Button>
