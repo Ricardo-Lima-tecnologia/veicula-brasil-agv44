@@ -79,7 +79,7 @@ export default function Header() {
               </div>
               <div className="flex flex-col leading-none">
                 <span className="font-heading font-extrabold text-white text-base lg:text-lg tracking-tight">
-                  VEICULA BRASIL
+                  Universo AGV
                 </span>
                 <span
                   className="text-[9px] font-bold tracking-[0.3em] uppercase mt-0.5"
