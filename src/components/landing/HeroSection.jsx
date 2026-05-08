@@ -173,8 +173,8 @@ export default function HeroSection() {
                 href="https://wa.me/5500000000000?text=Ol%C3%A1%2C%20gostaria%20de%20iniciar%20minha%20cota%C3%A7%C3%A3o%20de%20prote%C3%A7%C3%A3o%20veicular."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative overflow-hidden px-7 py-5 rounded-xl font-heading font-semibold text-sm sm:text-base text-white flex items-center justify-center gap-2.5 border border-green-400/30 backdrop-blur-sm transition-all duration-300 hover:border-green-400/60 hover:bg-green-500/10 hover:scale-[1.03]"
-                style={{ background: "rgba(22,163,74,0.08)", boxShadow: "0 4px 20px rgba(22,163,74,0.15)" }}
+                className="group relative overflow-hidden px-7 py-5 rounded-xl font-heading font-semibold text-sm sm:text-base text-white flex items-center justify-center gap-2.5 transition-all duration-300 hover:scale-[1.05]"
+                style={{ background: "linear-gradient(135deg, #22C55E 0%, #15803D 100%)", boxShadow: "0 8px 32px rgba(22,163,74,0.45), 0 2px 8px rgba(0,0,0,0.2)" }}
               >
                 <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse flex-shrink-0" />
                 <div className="flex flex-col items-start leading-none">
