@@ -41,7 +41,7 @@ export default function BenefitsSection() {
           </span>
           <h2 className="font-heading font-extrabold text-3xl sm:text-4xl lg:text-5xl text-white">
             Conheça os nossos{" "}
-            <span className="from-brand-blue-light to-primary text-transparent bg-[hsl(var(--brand-yellow))]">parceiros
+            <span className="from-brand-blue-light to-primary text-transparent bg-transparent">parceiros
 
             </span>
           </h2>
