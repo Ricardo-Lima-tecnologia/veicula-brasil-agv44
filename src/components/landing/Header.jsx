@@ -96,7 +96,7 @@ export default function Header() {
                 <button
                   key={link.href}
                   onClick={() => scrollTo(link.href)}
-                  className="relative px-4 py-2 text-sm font-medium transition-all duration-200 rounded-lg group"
+                  className="relative px-4 py-2 text-base font-medium transition-all duration-200 rounded-lg group"
                   style={{ color: activeLink === link.href ? "#fff" : "rgba(255,255,255,0.90)" }}
                 >
                   <span className="relative z-10 group-hover:text-white transition-colors">
