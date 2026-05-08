@@ -69,205 +69,169 @@ export default function HeroSection() {
       />
 
       {/* ── Main content ── */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-20 w-full">
-        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-36 pb-28 w-full text-center">
 
-          {/* LEFT — Copy */}
+          {/* Badge pill */}
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
+            className="inline-flex items-center gap-2 mb-8 px-5 py-2.5 rounded-full border border-white/15 backdrop-blur-sm"
+            style={{ background: "rgba(255,255,255,0.07)" }}
           >
-            {/* Badge pill */}
-            <motion.div
-              initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 }}
-              className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full border border-white/15 backdrop-blur-sm"
-              style={{ background: "rgba(255,255,255,0.07)" }}
-            >
-              <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-              <span className="text-white/80 text-xs font-semibold tracking-widest uppercase">
-                +10.000 Veículos Protegidos
-              </span>
-            </motion.div>
-
-            {/* Headline */}
-            <motion.h1
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.1 }}
-              className="font-heading font-extrabold text-4xl sm:text-5xl lg:text-[3.5rem] xl:text-6xl text-white leading-[1.06] tracking-tight"
-            >
-              Proteção Veicular{" "}
-              <br className="hidden sm:block" />
-              <span
-                className="relative inline-block"
-                style={{
-                  background: "linear-gradient(90deg, #FACC15, #FDE68A)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                }}
-              >
-                Completa
-              </span>{" "}
-              Sem{" "}
-              <br className="hidden sm:block" />
-              Burocracia
-            </motion.h1>
-
-            {/* Sub */}
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.25 }}
-              className="mt-6 text-base sm:text-lg text-white/90 max-w-md leading-relaxed font-body"
-            >
-              Proteja seu veículo contra roubo, furto e colisão com assistência 24h
-              em todo o Brasil. Atendimento humanizado e aprovação imediata.
-            </motion.p>
-
-            {/* Checklist */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.38 }}
-              className="mt-7 grid grid-cols-2 gap-x-5 gap-y-3"
-            >
-              {CHECKLIST.map((item) => (
-                <div key={item} className="flex items-center gap-2.5">
-                  <div className="w-5 h-5 rounded-full bg-green-500/20 border border-green-400/40 flex items-center justify-center flex-shrink-0">
-                    <CheckCircle2 className="w-3 h-3 text-green-400" />
-                  </div>
-                  <span className="text-sm text-white font-medium font-body">{item}</span>
-                </div>
-              ))}
-            </motion.div>
-
-            {/* CTA buttons */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.5 }}
-              className="mt-10 flex flex-col sm:flex-row gap-3"
-            >
-              {/* Primary */}
-              <button
-                onClick={() => scrollTo("#cotacao")}
-                className="group relative overflow-hidden px-7 py-5 rounded-xl font-heading font-bold text-sm sm:text-base text-blue-900 tracking-wide transition-all duration-300 hover:scale-[1.05] animate-pulse-cta"
-                style={{
-                  background: "linear-gradient(135deg, #FACC15 0%, #FDE68A 50%, #FACC15 100%)",
-                  boxShadow: "0 8px 40px rgba(250,204,21,0.50), 0 2px 8px rgba(0,0,0,0.2)",
-                }}
-              >
-                <span className="relative z-10 flex items-center gap-2">
-                  FAZER MINHA COTAÇÃO AGORA
-                  <ArrowRight className="w-4 h-4" />
-                </span>
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                  style={{ background: "linear-gradient(135deg, #FDE68A 0%, #FACC15 100%)" }} />
-              </button>
-
-              {/* Secondary */}
-              <a
-                href="https://wa.me/5500000000000?text=Ol%C3%A1%2C%20gostaria%20de%20iniciar%20minha%20cota%C3%A7%C3%A3o%20de%20prote%C3%A7%C3%A3o%20veicular."
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group relative overflow-hidden px-7 py-5 rounded-xl font-heading font-semibold text-sm sm:text-base text-white flex items-center justify-center gap-2.5 transition-all duration-300 hover:scale-[1.05]"
-                style={{ background: "linear-gradient(135deg, #22C55E 0%, #15803D 100%)", boxShadow: "0 8px 32px rgba(22,163,74,0.45), 0 2px 8px rgba(0,0,0,0.2)" }}
-              >
-                <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse flex-shrink-0" />
-                <div className="flex flex-col items-start leading-none">
-                  <span className="text-[10px] text-green-300 font-medium">Cotação em Minutos</span>
-                  <span>FALAR NO WHATSAPP</span>
-                </div>
-              </a>
-            </motion.div>
-
-            {/* Stars social proof */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.7 }}
-              className="mt-8 flex items-center gap-3"
-            >
-              <div className="flex gap-0.5">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4 text-yellow-400 fill-yellow-400" />
-                ))}
-              </div>
-              <span className="text-white/80 text-sm font-body">
-                4.9 — Mais de <span className="text-white font-semibold">2.000 avaliações</span>
-              </span>
-            </motion.div>
+            <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
+            <span className="text-white/85 text-xs font-semibold tracking-widest uppercase">
+              +10.000 Veículos Protegidos em Todo o Brasil
+            </span>
           </motion.div>
 
-          {/* RIGHT — Image + floating badge */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative flex justify-center lg:justify-end"
+          {/* Headline */}
+          <motion.h1
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.1 }}
+            className="font-heading font-extrabold text-5xl sm:text-6xl lg:text-7xl text-white leading-[1.05] tracking-tight"
           >
-            {/* Glow behind image */}
-            <div
-              className="absolute inset-0 rounded-3xl pointer-events-none"
+            Proteção Veicular{" "}
+            <span
               style={{
-                background: "radial-gradient(ellipse at center, hsla(var(--brand-blue-light),0.25) 0%, transparent 70%)",
-                filter: "blur(40px)",
+                background: "linear-gradient(90deg, #FACC15, #FDE68A)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
               }}
-            />
+            >
+              Completa
+            </span>
+            <br />
+            Sem Burocracia
+          </motion.h1>
 
-            {/* Image frame */}
-            <div className="relative w-full max-w-lg">
-              {/* Animated border ring */}
-              <div
-                className="absolute -inset-[2px] rounded-3xl pointer-events-none z-10"
-                style={{
-                  background:
-                    "linear-gradient(135deg, rgba(255,255,255,0.18), rgba(255,255,255,0.04), rgba(250,204,21,0.15))",
-                  borderRadius: "inherit",
-                }}
+          {/* Sub */}
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.25 }}
+            className="mt-7 text-lg sm:text-xl text-white/85 max-w-2xl mx-auto leading-relaxed font-body"
+          >
+            Proteja seu veículo contra roubo, furto e colisão com assistência 24h
+            em todo o Brasil. Atendimento humanizado e aprovação imediata.
+          </motion.p>
+
+          {/* Checklist */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.38 }}
+            className="mt-8 flex flex-wrap items-center justify-center gap-x-8 gap-y-3"
+          >
+            {CHECKLIST.map((item) => (
+              <div key={item} className="flex items-center gap-2.5">
+                <div className="w-5 h-5 rounded-full bg-green-500/20 border border-green-400/40 flex items-center justify-center flex-shrink-0">
+                  <CheckCircle2 className="w-3 h-3 text-green-400" />
+                </div>
+                <span className="text-sm text-white/90 font-medium font-body">{item}</span>
+              </div>
+            ))}
+          </motion.div>
+
+          {/* CTA buttons */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+            className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
+          >
+            {/* Primary */}
+            <button
+              onClick={() => scrollTo("#cotacao")}
+              className="group relative overflow-hidden w-full sm:w-auto px-8 py-5 rounded-xl font-heading font-bold text-base text-blue-900 tracking-wide transition-all duration-300 hover:scale-[1.05] animate-pulse-cta"
+              style={{
+                background: "linear-gradient(135deg, #FACC15 0%, #FDE68A 50%, #FACC15 100%)",
+                boxShadow: "0 8px 40px rgba(250,204,21,0.50), 0 2px 8px rgba(0,0,0,0.2)",
+              }}
+            >
+              <span className="relative z-10 flex items-center justify-center gap-2">
+                FAZER MINHA COTAÇÃO AGORA
+                <ArrowRight className="w-4 h-4" />
+              </span>
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                style={{ background: "linear-gradient(135deg, #FDE68A 0%, #FACC15 100%)" }} />
+            </button>
+
+            {/* Secondary */}
+            <a
+              href="https://wa.me/5500000000000?text=Ol%C3%A1%2C%20gostaria%20de%20iniciar%20minha%20cota%C3%A7%C3%A3o%20de%20prote%C3%A7%C3%A3o%20veicular."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative overflow-hidden w-full sm:w-auto px-8 py-5 rounded-xl font-heading font-semibold text-base text-white flex items-center justify-center gap-2.5 transition-all duration-300 hover:scale-[1.05]"
+              style={{ background: "linear-gradient(135deg, #22C55E 0%, #15803D 100%)", boxShadow: "0 8px 32px rgba(22,163,74,0.45), 0 2px 8px rgba(0,0,0,0.2)" }}
+            >
+              <span className="w-2 h-2 rounded-full bg-green-300 animate-pulse flex-shrink-0" />
+              <div className="flex flex-col items-start leading-none">
+                <span className="text-[10px] text-green-200 font-medium">Cotação em Minutos</span>
+                <span>FALAR NO WHATSAPP</span>
+              </div>
+            </a>
+          </motion.div>
+
+          {/* Stars social proof */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.7 }}
+            className="mt-8 flex items-center justify-center gap-3"
+          >
+            <div className="flex gap-0.5">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} className="w-4 h-4 text-yellow-400 fill-yellow-400" />
+              ))}
+            </div>
+            <span className="text-white/80 text-sm font-body">
+              4.9 — Mais de <span className="text-white font-semibold">2.000 avaliações</span>
+            </span>
+          </motion.div>
+
+          {/* Image */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9, delay: 0.6 }}
+            className="relative mt-16 mx-auto max-w-2xl"
+          >
+            <div className="absolute inset-0 rounded-3xl pointer-events-none"
+              style={{ background: "radial-gradient(ellipse at center, hsla(var(--brand-blue-light),0.3) 0%, transparent 70%)", filter: "blur(40px)" }} />
+            <div className="relative rounded-3xl overflow-hidden shadow-[0_40px_80px_rgba(0,0,0,0.5)]"
+              style={{ border: "1px solid rgba(255,255,255,0.1)" }}>
+              <img
+                src={FAMILY_IMG}
+                alt="Família protegida pela Veicula Brasil AGV"
+                className="w-full h-[260px] sm:h-[340px] object-cover"
               />
-              <div className="relative rounded-3xl overflow-hidden shadow-[0_40px_80px_rgba(0,0,0,0.5)]">
-                <img
-                  src={FAMILY_IMG}
-                  alt="Família protegida pela Veicula Brasil AGV"
-                  className="w-full h-[300px] sm:h-[360px] lg:h-[420px] object-cover"
-                />
-                {/* Inner dark overlay at bottom */}
-                <div
-                  className="absolute inset-0"
-                  style={{
-                    background:
-                      "linear-gradient(to top, hsla(var(--brand-navy),0.6) 0%, transparent 50%)",
-                  }}
-                />
-              </div>
+              <div className="absolute inset-0"
+                style={{ background: "linear-gradient(to top, hsla(var(--brand-navy),0.55) 0%, transparent 55%)" }} />
+            </div>
 
-              {/* Floating trust badges — grid */}
-              <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-[calc(100%+16px)] grid grid-cols-4 gap-2 px-2">
-                {TRUST_BADGES.map((b, i) => (
-                  <motion.div
-                    key={b.label}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.6 + i * 0.1, type: "spring" }}
-                    className="flex flex-col items-center gap-1 py-2.5 px-1 rounded-xl border border-white/15 backdrop-blur-md text-center"
-                    style={{ background: "rgba(0,30,90,0.80)" }}
-                  >
-                    <b.icon className="w-4 h-4 text-yellow-400 flex-shrink-0" />
-                    <div className="leading-none">
-                      <p className="text-white font-bold text-[10px] sm:text-xs">{b.label}</p>
-                      <p className="text-white/85 text-[9px] sm:text-[10px] mt-0.5">{b.sub}</p>
-                    </div>
-                  </motion.div>
-                ))}
-              </div>
+            {/* Floating trust badges */}
+            <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-[calc(100%-32px)] grid grid-cols-4 gap-2">
+              {TRUST_BADGES.map((b, i) => (
+                <motion.div
+                  key={b.label}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.8 + i * 0.1, type: "spring" }}
+                  className="flex flex-col items-center gap-1 py-2.5 px-1 rounded-xl border border-white/15 backdrop-blur-md text-center"
+                  style={{ background: "rgba(0,30,90,0.85)" }}
+                >
+                  <b.icon className="w-4 h-4 text-yellow-400 flex-shrink-0" />
+                  <div className="leading-none">
+                    <p className="text-white font-bold text-[10px] sm:text-xs">{b.label}</p>
+                    <p className="text-white/85 text-[9px] sm:text-[10px] mt-0.5">{b.sub}</p>
+                  </div>
+                </motion.div>
+              ))}
             </div>
           </motion.div>
 
-        </div>
       </div>
 
       {/* Scroll cue */}
