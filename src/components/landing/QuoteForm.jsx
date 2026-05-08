@@ -98,19 +98,18 @@ export default function QuoteForm() {
                   onSubmit={handleSubmit}
                   className="relative rounded-2xl p-6 sm:p-8"
                   style={{
-                    background: "rgba(0,10,40,0.92)",
-                    backdropFilter: "blur(24px)",
-                    border: "1px solid rgba(250,204,21,0.25)",
-                    boxShadow: "0 0 60px rgba(250,204,21,0.10), 0 20px 60px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.06)",
+                    background: "#ffffff",
+                    border: "1px solid rgba(250,204,21,0.35)",
+                    boxShadow: "0 0 60px rgba(250,204,21,0.15), 0 20px 60px rgba(0,0,0,0.4)",
                   }}
                 >
                   {/* Header */}
-                  <div className="flex items-center gap-3 mb-6 pb-5" style={{ borderBottom: "1px solid rgba(255,255,255,0.07)" }}>
+                  <div className="flex items-center gap-3 mb-6 pb-5" style={{ borderBottom: "1px solid rgba(0,0,0,0.08)" }}>
                     <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: "linear-gradient(135deg, #FACC15 0%, #FDE68A 100%)", boxShadow: "0 4px 16px rgba(250,204,21,0.35)" }}>
                       <Shield className="w-6 h-6 text-blue-900" />
                     </div>
                     <div>
-                      <h3 className="font-heading font-bold text-white text-lg">Cotação Online</h3>
+                      <h3 className="font-heading font-bold text-blue-900 text-lg">Cotação Online</h3>
                       <p className="text-sm font-medium" style={{ color: "#FACC15" }}>Resposta em minutos ⚡</p>
                     </div>
                   </div>
@@ -118,17 +117,17 @@ export default function QuoteForm() {
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     {FIELDS.map((f) => (
                       <div key={f.key} className={f.full ? "sm:col-span-2" : ""}>
-                        <Label className="text-sm font-semibold text-white/80 mb-1.5 block">{f.label}</Label>
+                        <Label className="text-sm font-semibold text-blue-900 mb-1.5 block">{f.label}</Label>
                         <Input
                           type={f.type}
                           placeholder={f.placeholder}
                           value={form[f.key]}
                           onChange={onChange(f.key)}
                           required
-                          className="h-12 rounded-xl text-white placeholder:text-white/30 font-medium"
+                          className="h-12 rounded-xl text-blue-900 placeholder:text-gray-400 font-medium"
                           style={{
-                            background: "rgba(255,255,255,0.06)",
-                            border: "1px solid rgba(255,255,255,0.12)",
+                            background: "#F8FAFF",
+                            border: "1px solid rgba(37,99,235,0.2)",
                           }}
                         />
                       </div>
@@ -150,7 +149,7 @@ export default function QuoteForm() {
                     <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ background: "linear-gradient(135deg, #FDE68A 0%, #FACC15 100%)" }} />
                   </button>
 
-                  <p className="text-center text-xs mt-4 flex items-center justify-center gap-1.5" style={{ color: "rgba(255,255,255,0.35)" }}>
+                  <p className="text-center text-xs mt-4 flex items-center justify-center gap-1.5 text-gray-400">
                     <Shield className="w-3.5 h-3.5" style={{ color: "#FACC15" }} />
                     Seus dados estão protegidos e não serão compartilhados.
                   </p>
