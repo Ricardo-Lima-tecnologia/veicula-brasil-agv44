@@ -55,14 +55,14 @@ export default function QuoteForm() {
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
           >
-            <span className="inline-block px-4 py-1.5 rounded-full bg-blue-600/10 text-blue-600 text-sm font-semibold mb-4">
+            <span className="inline-block px-4 py-1.5 rounded-full text-sm font-semibold mb-4" style={{ background: "rgba(37,99,235,0.15)", border: "1px solid rgba(37,99,235,0.35)", color: "#93C5FD" }}>
               Cotação Gratuita
             </span>
-            <h2 className="font-heading font-extrabold text-3xl sm:text-4xl lg:text-5xl text-foreground leading-tight">
+            <h2 className="font-heading font-extrabold text-3xl sm:text-4xl lg:text-5xl text-white leading-tight">
               Proteja seu veículo{" "}
-              <span className="bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">agora mesmo</span>
+              <span style={{ background: "linear-gradient(90deg, #FACC15, #FDE68A)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>agora mesmo</span>
             </h2>
-            <p className="mt-5 text-muted-foreground text-lg leading-relaxed font-body">
+            <p className="mt-5 text-white/55 text-lg leading-relaxed font-body">
               Preencha o formulário ao lado e receba sua cotação personalizada em minutos. Sem compromisso, sem burocracia.
             </p>
 
@@ -74,8 +74,8 @@ export default function QuoteForm() {
                 "Ativação em até 24 horas",
               ].map((item) => (
                 <div key={item} className="flex items-center gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-blue-600 flex-shrink-0" />
-                  <span className="text-foreground font-medium font-body">{item}</span>
+                  <CheckCircle2 className="w-5 h-5 text-yellow-400 flex-shrink-0" />
+                  <span className="text-white/80 font-medium font-body">{item}</span>
                 </div>
               ))}
             </div>

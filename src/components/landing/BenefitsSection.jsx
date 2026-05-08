@@ -14,7 +14,7 @@ const BENEFITS = [
 
 export default function BenefitsSection() {
   return (
-    <section id="beneficios" className="py-20 lg:py-28 bg-brand-navy relative overflow-hidden">
+    <section id="beneficios" className="py-20 lg:py-28 relative overflow-hidden" style={{ background: "linear-gradient(160deg, #001240 0%, #001F73 30%, #002EA6 65%, #001F73 85%, #001240 100%)" }}>
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(37,99,235,0.08),transparent_60%)]" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(59,130,246,0.06),transparent_50%)]" />
 

@@ -9,7 +9,7 @@ export default function FinalCTA() {
   };
 
   return (
-    <section className="py-20 lg:py-28 bg-brand-navy relative overflow-hidden">
+    <section className="py-20 lg:py-28 relative overflow-hidden" style={{ background: "linear-gradient(160deg, #001240 0%, #001F73 30%, #002EA6 65%, #001F73 85%, #001240 100%)" }}>
       {/* Animated blobs */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/10 rounded-full blur-[150px] pointer-events-none" />
       <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_20%_80%,rgba(59,130,246,0.08),transparent_50%)]" />
@@ -27,7 +27,7 @@ export default function FinalCTA() {
 
           <h2 className="font-heading font-extrabold text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-white leading-tight">
             Proteja Seu Veículo{" "}
-            <span className="bg-gradient-to-r from-brand-blue-light to-primary bg-clip-text text-transparent">
+            <span style={{ background: "linear-gradient(90deg, #FACC15, #FDE68A)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
               Hoje Mesmo
             </span>
           </h2>

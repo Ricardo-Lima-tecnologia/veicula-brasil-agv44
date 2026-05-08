@@ -36,8 +36,8 @@ const FAQS = [
 
 export default function FAQSection() {
   return (
-    <section id="faq" className="py-20 lg:py-28 bg-background relative overflow-hidden">
-      <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-blue-600/5 rounded-full blur-[120px] pointer-events-none" />
+    <section id="faq" className="py-20 lg:py-28 relative overflow-hidden" style={{ background: "linear-gradient(160deg, #001240 0%, #001F73 35%, #002EA6 65%, #001240 100%)" }}>
+      <div className="absolute bottom-0 right-0 w-[500px] h-[500px] rounded-full blur-[120px] pointer-events-none" style={{ background: "radial-gradient(circle, rgba(59,130,246,0.1) 0%, transparent 70%)" }} />
 
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
@@ -47,12 +47,12 @@ export default function FAQSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-14"
         >
-          <span className="inline-block px-4 py-1.5 rounded-full bg-blue-600/10 text-blue-600 text-sm font-semibold mb-4">
+          <span className="inline-block px-4 py-1.5 rounded-full text-sm font-semibold mb-4" style={{ background: "rgba(37,99,235,0.15)", border: "1px solid rgba(37,99,235,0.35)", color: "#93C5FD" }}>
             Perguntas Frequentes
           </span>
-          <h2 className="font-heading font-extrabold text-3xl sm:text-4xl lg:text-5xl text-foreground">
+          <h2 className="font-heading font-extrabold text-3xl sm:text-4xl lg:text-5xl text-white">
             Tire suas{" "}
-            <span className="bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">dúvidas</span>
+            <span style={{ background: "linear-gradient(90deg, #FACC15, #FDE68A)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>dúvidas</span>
           </h2>
         </motion.div>
 
@@ -67,15 +67,15 @@ export default function FAQSection() {
               <AccordionItem
                 key={i}
                 value={`faq-${i}`}
-                className="bg-card/80 backdrop-blur-sm border border-border/50 rounded-xl px-6 data-[state=open]:border-blue-500/20 data-[state=open]:shadow-lg data-[state=open]:shadow-blue-600/5 transition-all duration-300"
-              >
-                <AccordionTrigger className="text-left font-heading font-semibold text-foreground hover:no-underline py-5 gap-3">
+                className="rounded-xl px-6 transition-all duration-300 data-[state=open]:shadow-lg" style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)" }}
+                >
+                <AccordionTrigger className="text-left font-heading font-semibold text-white hover:no-underline py-5 gap-3">
                   <div className="flex items-center gap-3">
-                    <HelpCircle className="w-5 h-5 text-blue-600 flex-shrink-0" />
+                    <HelpCircle className="w-5 h-5 flex-shrink-0" style={{ color: "#FACC15" }} />
                     <span>{faq.q}</span>
                   </div>
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground leading-relaxed font-body pb-5 pl-8">
+                <AccordionContent className="text-white/55 leading-relaxed font-body pb-5 pl-8">
                   {faq.a}
                 </AccordionContent>
               </AccordionItem>
