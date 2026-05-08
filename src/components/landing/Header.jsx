@@ -55,20 +55,19 @@ export default function Header() {
           borderBottom: scrolled ? "1px solid rgba(255,255,255,0.07)" : "1px solid rgba(255,255,255,0.05)",
         }}
       >
-        <div className="max-w-7xl ml-0 mr-auto pr-4 sm:pr-6 lg:pr-8 pl-0">
+        <div className="max-w-7xl mx-auto pr-4 sm:pr-6 lg:pr-8 pl-0">
           <div className="flex items-center justify-between h-20 lg:h-24">
 
             {/* Logo */}
             <button
               onClick={() => scrollTo("#inicio")}
-              className="flex items-center flex-shrink-0 group h-full overflow-hidden border-r border-t border-b border-white/10 hover:border-white/20 transition-all duration-300 pr-4"
-              style={{ background: "rgba(255,255,255,0.04)", marginLeft: 0 }}
+              className="flex items-center flex-shrink-0 group h-full overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-300 pr-4"
+              style={{ background: "rgba(255,255,255,0.04)" }}
             >
               <img
                 src="https://media.base44.com/images/public/69fd4610dc407e0f852436ab/08fa4ff67_IMG_6685.png"
                 alt="Universo AGV Proteção Veicular"
                 className="h-20 lg:h-24 w-20 lg:w-24 object-cover flex-shrink-0"
-                style={{ marginLeft: 0 }}
               />
               <div className="flex flex-col leading-none ml-3">
                 <span className="font-heading font-extrabold text-white text-sm lg:text-base tracking-tight">
