@@ -97,7 +97,7 @@ export default function Header() {
                   key={link.href}
                   onClick={() => scrollTo(link.href)}
                   className="relative px-4 py-2 text-sm font-medium transition-all duration-200 rounded-lg group"
-                  style={{ color: activeLink === link.href ? "#fff" : "rgba(255,255,255,0.65)" }}
+                  style={{ color: activeLink === link.href ? "#fff" : "rgba(255,255,255,0.90)" }}
                 >
                   <span className="relative z-10 group-hover:text-white transition-colors">
                     {link.label}
@@ -126,7 +126,7 @@ export default function Header() {
                 href="https://wa.me/5500000000000?text=Ol%C3%A1%2C%20gostaria%20de%20iniciar%20minha%20cota%C3%A7%C3%A3o%20de%20prote%C3%A7%C3%A3o%20veicular."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold text-white/80 hover:text-white transition-all duration-200 hover:bg-white/8 border border-white/10 hover:border-white/20"
+                className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold text-white/95 hover:text-white transition-all duration-200 hover:bg-white/8 border border-white/10 hover:border-white/20"
               >
                 <Phone className="w-3.5 h-3.5 text-green-400" />
                 WhatsApp
@@ -192,7 +192,7 @@ export default function Header() {
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: i * 0.05 }}
                   onClick={() => scrollTo(link.href)}
-                  className="flex items-center w-full px-4 py-3 rounded-xl text-white/75 hover:text-white hover:bg-white/6 transition-all font-medium text-sm"
+                  className="flex items-center w-full px-4 py-3 rounded-xl text-white/90 hover:text-white hover:bg-white/6 transition-all font-medium text-sm"
                 >
                   <span
                     className="w-1.5 h-1.5 rounded-full mr-3 flex-shrink-0"
@@ -207,7 +207,7 @@ export default function Header() {
                   href="https://wa.me/5500000000000?text=Ol%C3%A1%2C%20gostaria%20de%20iniciar%20minha%20cota%C3%A7%C3%A3o%20de%20prote%C3%A7%C3%A3o%20veicular."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 py-3 rounded-xl border border-white/15 text-white/80 text-sm font-semibold hover:bg-white/8 transition-all"
+                  className="flex items-center justify-center gap-2 py-3 rounded-xl border border-white/15 text-white/95 text-sm font-semibold hover:bg-white/8 transition-all"
                 >
                   <Phone className="w-4 h-4 text-green-400" />
                   WhatsApp
