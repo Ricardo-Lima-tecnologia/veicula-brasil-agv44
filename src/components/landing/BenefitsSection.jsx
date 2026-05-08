@@ -27,7 +27,7 @@ export default function BenefitsSection() {
           transition={{ duration: 0.6 }}
           className="text-center max-w-2xl mx-auto mb-16">
           
-          <h2 className="font-heading font-extrabold text-3xl sm:text-4xl lg:text-5xl text-[hsl(var(--brand-blue))]" style={{ color: "#93C5FD" }}>
+          <h2 className="font-heading font-extrabold text-3xl sm:text-4xl lg:text-5xl text-[hsl(var(--brand-blue))]" style={{ color: "#1D4ED8" }}>
             Conheça os nossos{" "}
             <span style={{ color: "#FACC15" }}>parceiros</span>
           </h2>
