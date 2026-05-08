@@ -1,24 +1,34 @@
 import { motion } from "framer-motion";
-import { Zap, FileCheck, Rocket, MapPin, Wallet, Heart, MessageCircle, ShieldCheck } from "lucide-react";
 
-const BENEFITS = [
-  { icon: FileCheck, title: "Sem Burocracia", desc: "Processo simples e direto, sem papelada desnecessária." },
-  { icon: Zap, title: "Sem Análise Complicada", desc: "Aprovação rápida sem análise de perfil complicada." },
-  { icon: Rocket, title: "Ativação Rápida", desc: "Sua proteção ativada em até 24 horas após a adesão." },
-  { icon: MapPin, title: "Cobertura Nacional", desc: "Proteção válida em todo o território brasileiro." },
-  { icon: Wallet, title: "Economia Real", desc: "Até 60% mais barato que o seguro tradicional." },
-  { icon: Heart, title: "Atendimento Humanizado", desc: "Equipe preparada para te atender com empatia e agilidade." },
-  { icon: MessageCircle, title: "Suporte Rápido", desc: "Canais de atendimento ágeis via WhatsApp e telefone." },
-  { icon: ShieldCheck, title: "Proteção Completa", desc: "Cobertura ampla que abrange as principais situações." },
+const PARTNERS = [
+  {
+    name: "Andre Valadão",
+    img: "https://media.base44.com/images/public/69fd4610dc407e0f852436ab/883703719_IMG_6686.png",
+  },
+  {
+    name: "Henrique Maderite",
+    img: "https://media.base44.com/images/public/69fd4610dc407e0f852436ab/babb3d2e6_IMG_6687.png",
+  },
+  {
+    name: "Bernadinho",
+    img: "https://media.base44.com/images/public/69fd4610dc407e0f852436ab/6fa8d0476_IMG_6688.png",
+  },
 ];
 
 export default function BenefitsSection() {
   return (
-    <section id="beneficios" className="py-20 lg:py-28 relative overflow-hidden" style={{ background: "linear-gradient(160deg, #001240 0%, #001F73 30%, #002EA6 65%, #001F73 85%, #001240 100%)" }}>
+    <section
+      id="beneficios"
+      className="py-20 lg:py-28 relative overflow-hidden"
+      style={{
+        background: "linear-gradient(160deg, #001240 0%, #001F73 30%, #002EA6 65%, #001F73 85%, #001240 100%)",
+      }}
+    >
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(37,99,235,0.08),transparent_60%)]" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(59,130,246,0.06),transparent_50%)]" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -27,34 +37,37 @@ export default function BenefitsSection() {
           className="text-center max-w-2xl mx-auto mb-16"
         >
           <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-brand-blue-light text-sm font-semibold mb-4">
-            Vantagens Exclusivas
+            Embaixadores
           </span>
           <h2 className="font-heading font-extrabold text-3xl sm:text-4xl lg:text-5xl text-white">
-            Por que escolher a{" "}
+            Conheça os nossos{" "}
             <span className="bg-gradient-to-r from-brand-blue-light to-primary bg-clip-text text-transparent">
-              Veicula Brasil?
+              parceiros
             </span>
           </h2>
           <p className="mt-4 text-white/85 text-lg font-body">
-            Descubra as vantagens que fazem de nós a melhor opção em proteção veicular.
+            Grandes nomes que confiam e apoiam a Universo AGV Proteção Veicular.
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {BENEFITS.map((benefit, i) => (
+        {/* Partners Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          {PARTNERS.map((partner, i) => (
             <motion.div
-              key={benefit.title}
-              initial={{ opacity: 0, y: 30 }}
+              key={partner.name}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: i * 0.07 }}
-              className="group relative p-6 rounded-2xl bg-white/[0.03] border border-white/[0.06] backdrop-blur-sm hover:bg-white/[0.06] hover:border-primary/20 transition-all duration-500"
+              transition={{ duration: 0.5, delay: i * 0.12 }}
+              className="group relative aspect-square rounded-2xl overflow-hidden shadow-2xl"
             >
-              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary/20 to-brand-blue-light/10 flex items-center justify-center mb-4 group-hover:from-primary/30 group-hover:to-brand-blue-light/20 transition-all duration-300">
-                <benefit.icon className="w-6 h-6 text-brand-blue-light group-hover:scale-110 transition-transform duration-300" />
-              </div>
-              <h3 className="font-heading font-bold text-white text-lg mb-2">{benefit.title}</h3>
-              <p className="text-white/80 text-sm leading-relaxed font-body">{benefit.desc}</p>
+              <img
+                src={partner.img}
+                alt={partner.name}
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              {/* Subtle hover overlay */}
+              <div className="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </motion.div>
           ))}
         </div>
