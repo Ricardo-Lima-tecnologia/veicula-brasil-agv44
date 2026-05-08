@@ -67,15 +67,15 @@ export default function Header() {
               onClick={() => scrollTo("#inicio")}
               className="flex items-center gap-2.5 flex-shrink-0 group">
               
-              <div
-                className="w-10 h-10 lg:w-11 lg:h-11 rounded-xl flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:scale-105 hidden"
-                style={{
-                  background: "linear-gradient(135deg, hsl(var(--brand-blue)) 0%, hsl(var(--brand-blue-light)) 100%)",
-                  boxShadow: "0 0 16px hsla(var(--brand-blue-light),0.4)"
-                }}>
-                
-                <Shield className="w-5 h-5 lg:w-6 lg:h-6 text-white hidden" />
-              </div>
+              
+
+
+
+
+
+
+
+              
               <img
                 src="https://media.base44.com/images/public/69fd4610dc407e0f852436ab/08fa4ff67_IMG_6685.png"
                 alt="Universo AGV Proteção Veicular"
