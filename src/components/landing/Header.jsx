@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Phone, Shield } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
 
 const NAV_LINKS = [
   { label: "Início", href: "#inicio" },
@@ -65,29 +65,13 @@ export default function Header() {
             {/* Logo */}
             <button
               onClick={() => scrollTo("#inicio")}
-              className="flex items-center gap-3 group flex-shrink-0"
+              className="flex items-center flex-shrink-0 group"
             >
-              {/* Shield icon with glow */}
-              <div
-                className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:scale-105"
-                style={{
-                  background: "linear-gradient(135deg, hsl(var(--brand-blue)) 0%, hsl(var(--brand-blue-light)) 100%)",
-                  boxShadow: "0 0 16px hsla(var(--brand-blue-light),0.4)",
-                }}
-              >
-                <Shield className="w-5 h-5 text-white" />
-              </div>
-              <div className="flex flex-col leading-none">
-                <span className="font-heading font-extrabold text-white text-base lg:text-lg tracking-tight">
-                  Universo AGV
-                </span>
-                <span
-                  className="text-[9px] font-bold tracking-[0.3em] uppercase mt-0.5"
-                  style={{ color: "#FACC15" }}
-                >
-                  PROTEÇÃO VEICULAR
-                </span>
-              </div>
+              <img
+                src="https://media.base44.com/images/public/69fd4610dc407e0f852436ab/08fa4ff67_IMG_6685.png"
+                alt="Universo AGV Proteção Veicular"
+                className="h-12 lg:h-14 w-auto object-contain transition-all duration-300 group-hover:scale-105"
+              />
             </button>
 
             {/* Desktop nav */}
