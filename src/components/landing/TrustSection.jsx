@@ -10,13 +10,13 @@ const SERVICES = [
     icon: Clock,
     title: "Assistência 24 Horas",
     desc: "Suporte completo disponível a qualquer hora, todos os dias. Nossa equipe está sempre pronta para te atender.",
-    color: "#3B82F6",
+    color: "#FACC15",
   },
   {
     icon: Truck,
     title: "Reboque Nacional",
     desc: "Guincho e reboque ilimitado em todo o território brasileiro, sem custo adicional.",
-    color: "#60A5FA",
+    color: "#FACC15",
   },
   {
     icon: Shield,
@@ -28,13 +28,13 @@ const SERVICES = [
     icon: Car,
     title: "Carro Reserva",
     desc: "Veículo reserva disponível enquanto o seu está em reparo. Sem deixar você na mão.",
-    color: "#3B82F6",
+    color: "#FACC15",
   },
   {
     icon: Users,
     title: "Proteção para Terceiros",
     desc: "Cobertura para danos causados a terceiros, garantindo sua segurança completa no trânsito.",
-    color: "#60A5FA",
+    color: "#FACC15",
   },
   {
     icon: Zap,
@@ -46,13 +46,13 @@ const SERVICES = [
     icon: MapPin,
     title: "Cobertura Nacional",
     desc: "Proteção válida em todo o Brasil. De Norte a Sul, você está sempre amparado.",
-    color: "#3B82F6",
+    color: "#FACC15",
   },
   {
     icon: Radio,
     title: "Rastreamento Veicular",
     desc: "Sistema de rastreamento integrado para monitorar e localizar seu veículo em tempo real.",
-    color: "#60A5FA",
+    color: "#FACC15",
   },
 ];
 
