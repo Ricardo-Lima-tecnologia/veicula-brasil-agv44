@@ -282,10 +282,10 @@ export default function TrustSection() {
               <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
                 <button
                   onClick={() => scrollTo("#cotacao")}
-                  className="group relative overflow-hidden w-full sm:w-auto px-8 py-4 rounded-xl font-heading font-bold text-base text-blue-950 transition-all duration-300 hover:scale-[1.03] hover:shadow-2xl"
+                  className="group relative overflow-hidden w-full sm:w-auto px-8 py-4 rounded-xl font-heading font-bold text-base text-blue-950 transition-all duration-300 hover:scale-[1.05]"
                   style={{
                     background: "linear-gradient(135deg, #FACC15 0%, #FDE68A 100%)",
-                    boxShadow: "0 8px 28px rgba(250,204,21,0.28)",
+                    boxShadow: "0 8px 36px rgba(250,204,21,0.50), 0 2px 8px rgba(0,0,0,0.15)",
                   }}
                 >
                   <span className="relative z-10 flex items-center justify-center gap-2">
@@ -302,10 +302,14 @@ export default function TrustSection() {
                   href="https://wa.me/5500000000000?text=Ol%C3%A1%2C%20gostaria%20de%20iniciar%20minha%20cota%C3%A7%C3%A3o%20de%20prote%C3%A7%C3%A3o%20veicular."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-4 rounded-xl font-semibold text-white border border-white/15 hover:bg-white/8 hover:border-white/25 transition-all duration-300 text-sm"
+                  className="group flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-4 rounded-xl font-semibold text-white border border-green-400/30 hover:border-green-400/60 hover:bg-green-500/10 hover:scale-[1.03] transition-all duration-300 text-sm"
+                  style={{ boxShadow: "0 4px 16px rgba(22,163,74,0.15)" }}
                 >
-                  <Phone className="w-4 h-4 text-green-400" />
-                  Falar no WhatsApp
+                  <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
+                  <div className="flex flex-col items-start leading-none">
+                    <span className="text-[9px] text-green-300">Atendimento Imediato</span>
+                    <span>Falar no WhatsApp</span>
+                  </div>
                 </a>
               </div>
             </div>

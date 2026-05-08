@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence, useInView } from "framer-motion";
-import { Star, BadgeCheck, Shield, Phone, ChevronLeft, ChevronRight, Quote, Users, MapPin, Zap, Clock } from "lucide-react";
+import { Star, BadgeCheck, Shield, Phone, ChevronLeft, ChevronRight, Quote, Users, MapPin, Zap, Clock, ArrowRight } from "lucide-react";
 
 const TESTIMONIALS = [
   {
@@ -401,13 +401,16 @@ export default function TestimonialsSection() {
               <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
                 <button
                   onClick={() => scrollTo("#cotacao")}
-                  className="group relative overflow-hidden w-full sm:w-auto px-8 py-4 rounded-xl font-heading font-bold text-base text-blue-900 transition-all duration-300 hover:scale-[1.03] hover:shadow-2xl"
+                  className="group relative overflow-hidden w-full sm:w-auto px-8 py-4 rounded-xl font-heading font-bold text-base text-blue-900 transition-all duration-300 hover:scale-[1.05]"
                   style={{
                     background: "linear-gradient(135deg, #FACC15 0%, #FDE68A 100%)",
-                    boxShadow: "0 8px 32px rgba(250,204,21,0.30)",
+                    boxShadow: "0 8px 36px rgba(250,204,21,0.50), 0 2px 8px rgba(0,0,0,0.15)",
                   }}
                 >
-                  <span className="relative z-10">QUERO PROTEGER MEU VEÍCULO</span>
+                  <span className="relative z-10 flex items-center gap-2">
+                    QUERO PROTEGER MEU VEÍCULO
+                    <ArrowRight className="w-4 h-4" />
+                  </span>
                   <div
                     className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                     style={{ background: "linear-gradient(135deg, #FDE68A 0%, #FACC15 100%)" }}
@@ -418,11 +421,14 @@ export default function TestimonialsSection() {
                   href="https://wa.me/5500000000000?text=Ol%C3%A1%2C%20gostaria%20de%20iniciar%20minha%20cota%C3%A7%C3%A3o%20de%20prote%C3%A7%C3%A3o%20veicular."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-4 rounded-xl font-semibold text-white border border-white/15 hover:bg-white/8 hover:border-white/30 transition-all duration-300"
-                  style={{ backdropFilter: "blur(8px)" }}
+                  className="group flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-4 rounded-xl font-semibold text-white border border-green-400/30 hover:border-green-400/60 hover:bg-green-500/10 hover:scale-[1.03] transition-all duration-300"
+                  style={{ backdropFilter: "blur(8px)", boxShadow: "0 4px 16px rgba(22,163,74,0.15)" }}
                 >
-                  <Phone className="w-4 h-4 text-green-400" />
-                  Falar no WhatsApp
+                  <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse flex-shrink-0" />
+                  <div className="flex flex-col items-start leading-none">
+                    <span className="text-[9px] text-green-300">Atendimento Imediato</span>
+                    <span>Falar no WhatsApp</span>
+                  </div>
                 </a>
               </div>
             </div>

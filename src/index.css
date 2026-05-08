@@ -105,4 +105,12 @@
   html {
     scroll-behavior: smooth;
   }
+
+  @keyframes cta-pulse {
+    0%, 100% { box-shadow: 0 8px 40px rgba(250,204,21,0.50), 0 2px 8px rgba(0,0,0,0.2); }
+    50% { box-shadow: 0 8px 56px rgba(250,204,21,0.75), 0 4px 16px rgba(0,0,0,0.25); }
+  }
+  .animate-pulse-cta {
+    animation: cta-pulse 2.5s ease-in-out infinite;
+  }
 }

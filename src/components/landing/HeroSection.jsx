@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { CheckCircle2, Phone, Shield, Clock, MapPin, Star, ChevronDown } from "lucide-react";
+import { CheckCircle2, Phone, Shield, Clock, MapPin, Star, ChevronDown, ArrowRight } from "lucide-react";
 
 const FAMILY_IMG = "https://media.base44.com/images/public/69fd4610dc407e0f852436ab/65c17eb34_generated_image.png";
 
@@ -154,13 +154,16 @@ export default function HeroSection() {
               {/* Primary */}
               <button
                 onClick={() => scrollTo("#cotacao")}
-                className="group relative overflow-hidden px-7 py-4 rounded-xl font-heading font-bold text-sm sm:text-base text-blue-900 tracking-wide transition-all duration-300 hover:scale-[1.03] hover:shadow-2xl"
+                className="group relative overflow-hidden px-7 py-5 rounded-xl font-heading font-bold text-sm sm:text-base text-blue-900 tracking-wide transition-all duration-300 hover:scale-[1.05] animate-pulse-cta"
                 style={{
                   background: "linear-gradient(135deg, #FACC15 0%, #FDE68A 50%, #FACC15 100%)",
-                  boxShadow: "0 8px 32px rgba(250,204,21,0.30)",
+                  boxShadow: "0 8px 40px rgba(250,204,21,0.50), 0 2px 8px rgba(0,0,0,0.2)",
                 }}
               >
-                <span className="relative z-10">FAZER MINHA COTAÇÃO AGORA</span>
+                <span className="relative z-10 flex items-center gap-2">
+                  FAZER MINHA COTAÇÃO AGORA
+                  <ArrowRight className="w-4 h-4" />
+                </span>
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                   style={{ background: "linear-gradient(135deg, #FDE68A 0%, #FACC15 100%)" }} />
               </button>
@@ -170,11 +173,14 @@ export default function HeroSection() {
                 href="https://wa.me/5500000000000?text=Ol%C3%A1%2C%20gostaria%20de%20iniciar%20minha%20cota%C3%A7%C3%A3o%20de%20prote%C3%A7%C3%A3o%20veicular."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative overflow-hidden px-7 py-4 rounded-xl font-heading font-semibold text-sm sm:text-base text-white flex items-center justify-center gap-2.5 border border-white/20 backdrop-blur-sm transition-all duration-300 hover:border-white/40 hover:bg-white/10"
-                style={{ background: "rgba(255,255,255,0.07)" }}
+                className="group relative overflow-hidden px-7 py-5 rounded-xl font-heading font-semibold text-sm sm:text-base text-white flex items-center justify-center gap-2.5 border border-green-400/30 backdrop-blur-sm transition-all duration-300 hover:border-green-400/60 hover:bg-green-500/10 hover:scale-[1.03]"
+                style={{ background: "rgba(22,163,74,0.08)", boxShadow: "0 4px 20px rgba(22,163,74,0.15)" }}
               >
-                <Phone className="w-4 h-4 text-green-400 flex-shrink-0" />
-                FALAR NO WHATSAPP
+                <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse flex-shrink-0" />
+                <div className="flex flex-col items-start leading-none">
+                  <span className="text-[10px] text-green-300 font-medium">Cotação em Minutos</span>
+                  <span>FALAR NO WHATSAPP</span>
+                </div>
               </a>
             </motion.div>
 

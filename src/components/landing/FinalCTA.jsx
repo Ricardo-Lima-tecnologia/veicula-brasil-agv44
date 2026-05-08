@@ -43,22 +43,37 @@ export default function FinalCTA() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Button
-                size="lg"
-                className="bg-green-600 hover:bg-green-500 text-white font-bold text-base px-8 py-6 rounded-xl shadow-lg shadow-green-600/30 gap-2"
+              <button
+                className="group relative overflow-hidden flex items-center gap-3 px-8 py-4 rounded-xl font-bold text-base text-white transition-all duration-300 hover:scale-[1.05]"
+                style={{
+                  background: "linear-gradient(135deg, #22C55E 0%, #15803D 100%)",
+                  boxShadow: "0 8px 32px rgba(22,163,74,0.50), 0 2px 8px rgba(0,0,0,0.2)",
+                }}
               >
-                <Phone className="w-5 h-5" />
-                FALAR NO WHATSAPP
-              </Button>
+                <span className="w-2 h-2 rounded-full bg-green-200 animate-pulse flex-shrink-0" />
+                <div className="flex flex-col items-start leading-none">
+                  <span className="text-[10px] text-green-200 font-medium">Suporte Rápido no WhatsApp</span>
+                  <span>FALAR NO WHATSAPP</span>
+                </div>
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                  style={{ background: "linear-gradient(135deg, #16A34A 0%, #22C55E 100%)" }} />
+              </button>
             </a>
-            <Button
-              size="lg"
+            <button
               onClick={scrollTo}
-              className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-base px-8 py-6 rounded-xl shadow-lg shadow-primary/30 gap-2"
+              className="group relative overflow-hidden flex items-center gap-2 px-8 py-4 rounded-xl font-bold text-base text-blue-900 transition-all duration-300 hover:scale-[1.05]"
+              style={{
+                background: "linear-gradient(135deg, #FACC15 0%, #FDE68A 100%)",
+                boxShadow: "0 8px 32px rgba(250,204,21,0.50), 0 2px 8px rgba(0,0,0,0.2)",
+              }}
             >
-              FAZER COTAÇÃO
-              <ArrowRight className="w-5 h-5" />
-            </Button>
+              <span className="relative z-10 flex items-center gap-2">
+                FAZER COTAÇÃO AGORA
+                <ArrowRight className="w-5 h-5" />
+              </span>
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                style={{ background: "linear-gradient(135deg, #FDE68A 0%, #FACC15 100%)" }} />
+            </button>
           </div>
 
           <p className="mt-8 text-white/60 text-sm font-body">

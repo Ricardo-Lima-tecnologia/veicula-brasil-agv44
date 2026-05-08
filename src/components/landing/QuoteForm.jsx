@@ -136,10 +136,10 @@ export default function QuoteForm() {
 
                   <button
                     type="submit"
-                    className="group relative overflow-hidden w-full mt-6 py-4 rounded-xl font-heading font-bold text-base text-blue-900 transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl flex items-center justify-center gap-2"
+                    className="group relative overflow-hidden w-full mt-6 py-5 rounded-xl font-heading font-bold text-base text-blue-900 transition-all duration-300 hover:scale-[1.03] flex items-center justify-center gap-2"
                     style={{
                       background: "linear-gradient(135deg, #FACC15 0%, #FDE68A 100%)",
-                      boxShadow: "0 8px 32px rgba(250,204,21,0.40)",
+                      boxShadow: "0 8px 40px rgba(250,204,21,0.55), 0 2px 8px rgba(0,0,0,0.15)",
                     }}
                   >
                     <span className="relative z-10 flex items-center gap-2">
