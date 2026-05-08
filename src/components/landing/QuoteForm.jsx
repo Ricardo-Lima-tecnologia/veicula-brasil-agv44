@@ -43,7 +43,7 @@ export default function QuoteForm() {
   ];
 
   return (
-    <section id="cotacao" className="py-20 lg:py-28 bg-background relative overflow-hidden">
+    <section id="cotacao" className="py-20 lg:py-28 relative overflow-hidden" style={{ background: "linear-gradient(160deg, #001240 0%, #001F73 30%, #002EA6 65%, #001F73 85%, #001240 100%)" }}>
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-blue-600/5 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
