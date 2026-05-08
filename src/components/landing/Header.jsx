@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, X, Phone, Shield } from "lucide-react";
 
 const NAV_LINKS = [
   { label: "Início", href: "#inicio" },
@@ -65,8 +65,17 @@ export default function Header() {
             {/* Logo */}
             <button
               onClick={() => scrollTo("#inicio")}
-              className="flex items-center flex-shrink-0 group"
+              className="flex items-center gap-2.5 flex-shrink-0 group"
             >
+              <div
+                className="w-10 h-10 lg:w-11 lg:h-11 rounded-xl flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:scale-105"
+                style={{
+                  background: "linear-gradient(135deg, hsl(var(--brand-blue)) 0%, hsl(var(--brand-blue-light)) 100%)",
+                  boxShadow: "0 0 16px hsla(var(--brand-blue-light),0.4)",
+                }}
+              >
+                <Shield className="w-5 h-5 lg:w-6 lg:h-6 text-white" />
+              </div>
               <img
                 src="https://media.base44.com/images/public/69fd4610dc407e0f852436ab/08fa4ff67_IMG_6685.png"
                 alt="Universo AGV Proteção Veicular"
