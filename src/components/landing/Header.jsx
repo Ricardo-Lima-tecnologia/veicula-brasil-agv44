@@ -81,6 +81,17 @@ export default function Header() {
                 alt="Universo AGV Proteção Veicular"
                 className="h-16 lg:h-16 w-auto object-contain transition-all duration-300 group-hover:scale-105"
               />
+              <div className="hidden sm:flex flex-col leading-none">
+                <span className="font-heading font-extrabold text-white text-sm lg:text-base tracking-tight">
+                  Universo AGV
+                </span>
+                <span
+                  className="text-[9px] lg:text-[10px] font-bold tracking-[0.2em] uppercase mt-0.5"
+                  style={{ color: "#FACC15" }}
+                >
+                  Proteção Veicular
+                </span>
+              </div>
             </button>
 
             {/* Desktop nav */}
