@@ -400,8 +400,8 @@ export default function TestimonialsSection() {
                 >
                   <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse flex-shrink-0" />
                   <div className="flex flex-col items-start leading-none">
-                    <span className="text-[9px] text-green-300">Atendimento Imediato</span>
-                    <span>Falar no WhatsApp</span>
+                    <span className="text-[9px] text-white/90 font-medium">Atendimento Imediato</span>
+                    <span className="text-white font-bold">Falar no WhatsApp</span>
                   </div>
                 </a>
               </div>
