@@ -10,11 +10,11 @@
     --font-body: 'Inter', sans-serif;
 
     /* Brand palette — blue corporate */
-    --brand-blue:        217 91% 52%;   /* #2563EB main blue     */
-    --brand-blue-light:  213 93% 67%;   /* #60A5FA lighter blue  */
-    --brand-navy:        218 65% 11%;   /* #0F2040 deep navy     */
-    --brand-navy-mid:    218 55% 16%;   /* #162947 mid navy      */
-    --brand-yellow:      45 96% 58%;    /* #F9C826 CTA yellow    */
+    --brand-blue:        225 100% 32%;  /* #002EA6 royal blue    */
+    --brand-blue-light:  220 90%  55%;  /* #1A5CE6 lighter blue  */
+    --brand-navy:        225 100% 22%;  /* #001F73 deep navy     */
+    --brand-navy-mid:    225 100% 27%;  /* #002699 mid navy      */
+    --brand-yellow:      45  96%  58%;  /* #F9C826 CTA yellow    */
 
     /* System tokens — light mode */
     --background: 210 40% 98%;
