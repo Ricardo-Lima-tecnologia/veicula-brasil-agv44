@@ -26,7 +26,7 @@ function trackBrowser(eventName, params = {}, eventId) {
 
 async function trackCAPI(eventName, eventId, userData = {}, customData = {}) {
   try {
-    await fetch("/.netlify/functions/meta-capi", {
+    await fetch("/api/meta-capi.php", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
