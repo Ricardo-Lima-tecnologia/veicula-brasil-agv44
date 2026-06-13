@@ -21,9 +21,10 @@ export default function QuoteForm() {
     e.preventDefault();
     setSubmitted(true);
 
-    pixelEvents.lead({
-      content_name: "Cotação Proteção Veicular — Formulário",
-    });
+    pixelEvents.lead(
+      { content_name: "Cotação Proteção Veicular — Formulário" },
+      { email: form.email, phone: form.whatsapp }
+    );
 
     const msg = encodeURIComponent(
       `Olá! Vi o anúncio da Universo AGV e gostaria de solicitar uma cotação de proteção veicular.\n\n` +
