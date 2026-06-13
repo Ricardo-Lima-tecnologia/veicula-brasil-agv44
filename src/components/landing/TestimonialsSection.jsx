@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence, useInView } from "framer-motion";
 import { Star, BadgeCheck, Shield, Phone, ChevronLeft, ChevronRight, Quote, Users, MapPin, Zap, Clock, ArrowRight } from "lucide-react";
+import { pixelEvents } from "@/utils/metaPixel";
 
 const TESTIMONIALS = [
   {
@@ -392,9 +393,10 @@ export default function TestimonialsSection() {
                 </button>
 
                 <a
-                  href="https://wa.me/5561985991662?text=Ol%C3%A1%2C%20gostaria%20de%20iniciar%20minha%20cota%C3%A7%C3%A3o%20de%20prote%C3%A7%C3%A3o%20veicular."
+                  href="https://wa.me/556198571690?text=Ol%C3%A1%21%20Vi%20o%20an%C3%BAncio%20da%20Universo%20AGV%20e%20gostaria%20de%20solicitar%20uma%20cota%C3%A7%C3%A3o%20de%20prote%C3%A7%C3%A3o%20veicular."
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => pixelEvents.contact({ content_name: "WhatsApp Depoimentos" })}
                   className="group flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-4 rounded-xl font-semibold text-white hover:scale-[1.03] transition-all duration-300"
                   style={{ background: "linear-gradient(135deg, #22C55E 0%, #15803D 100%)", boxShadow: "0 8px 32px rgba(22,163,74,0.45), 0 2px 8px rgba(0,0,0,0.2)" }}
                 >
