@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
+import { pixelEvents } from "@/utils/metaPixel";
 
-const WA_LINK = "https://wa.me/5561985991662?text=Ol%C3%A1%2C%20gostaria%20de%20iniciar%20minha%20cota%C3%A7%C3%A3o%20de%20prote%C3%A7%C3%A3o%20veicular.";
+const WA_LINK = "https://wa.me/5561985991662?text=Ol%C3%A1%21%20Vi%20o%20an%C3%BAncio%20da%20Universo%20AGV%20e%20gostaria%20de%20solicitar%20uma%20cota%C3%A7%C3%A3o%20de%20prote%C3%A7%C3%A3o%20veicular.";
 
 export default function FloatingWhatsApp() {
   return (
@@ -8,6 +9,7 @@ export default function FloatingWhatsApp() {
       href={WA_LINK}
       target="_blank"
       rel="noopener noreferrer"
+      onClick={() => pixelEvents.contact({ content_name: "WhatsApp Flutuante" })}
       initial={{ scale: 0, opacity: 0 }}
       animate={{ scale: 1, opacity: 1 }}
       transition={{ delay: 1.2, type: "spring", stiffness: 260, damping: 20 }}

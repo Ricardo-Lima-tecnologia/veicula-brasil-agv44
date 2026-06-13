@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Shield, Phone, ArrowRight } from "lucide-react";
+import { pixelEvents } from "@/utils/metaPixel";
 
 export default function FinalCTA() {
   const scrollTo = () => {
@@ -39,9 +40,10 @@ export default function FinalCTA() {
 
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
-              href="https://wa.me/5561985991662?text=Ol%C3%A1%2C%20gostaria%20de%20iniciar%20minha%20cota%C3%A7%C3%A3o%20de%20prote%C3%A7%C3%A3o%20veicular."
+              href="https://wa.me/5561985991662?text=Ol%C3%A1%21%20Vi%20o%20an%C3%BAncio%20da%20Universo%20AGV%20e%20gostaria%20de%20solicitar%20uma%20cota%C3%A7%C3%A3o%20de%20prote%C3%A7%C3%A3o%20veicular."
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => pixelEvents.contact({ content_name: "WhatsApp Final CTA" })}
             >
               <button
                 className="group relative overflow-hidden flex items-center gap-3 px-8 py-4 rounded-xl font-bold text-base text-white transition-all duration-300 hover:scale-[1.05]"

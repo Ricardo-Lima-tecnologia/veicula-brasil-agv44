@@ -10,12 +10,12 @@ export default function Footer() {
             <div className="flex items-center gap-2 mb-4">
               <Shield className="w-7 h-7 text-brand-blue-light" />
               <div className="flex flex-col leading-none">
-                <span className="font-heading font-bold text-white text-base tracking-tight">VEICULA BRASIL</span>
+                <span className="font-heading font-bold text-white text-base tracking-tight">UNIVERSO AGV</span>
                 <span className="text-[9px] text-brand-blue-light font-semibold tracking-[0.2em]">PROTEÇÃO VEICULAR</span>
               </div>
             </div>
             <p className="text-white/75 text-sm leading-relaxed font-body">
-              Proteção veicular completa com assistência 24h em todo o Brasil. Economia, segurança e tranquilidade para você e sua família.
+              Proteção veicular completa com assistência 24h em todo o Brasil. Tranquilidade e suporte para você e sua família.
             </p>
           </div>
 
@@ -46,7 +46,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2 text-white/75 text-sm">
                 <Mail className="w-4 h-4 text-brand-blue-light flex-shrink-0" />
-                <span>contato@veiculabrasilagv.com.br</span>
+                <span>contato@universoagv.com.br</span>
               </li>
               <li className="flex items-start gap-2 text-white/75 text-sm">
                 <MapPin className="w-4 h-4 text-brand-blue-light flex-shrink-0 mt-0.5" />
@@ -60,23 +60,23 @@ export default function Footer() {
             <h4 className="font-heading font-bold text-white mb-4 text-sm uppercase tracking-wider">Legal</h4>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="text-white/40 hover:text-brand-blue-light transition-colors text-sm font-body">
+                <a href="#politica-privacidade" className="text-white/40 hover:text-brand-blue-light transition-colors text-sm font-body">
                   Política de Privacidade
                 </a>
               </li>
               <li>
-                <a href="#" className="text-white/40 hover:text-brand-blue-light transition-colors text-sm font-body">
+                <a href="#termos-de-uso" className="text-white/40 hover:text-brand-blue-light transition-colors text-sm font-body">
                   Termos de Uso
                 </a>
               </li>
               <li className="flex items-center gap-2">
                 <a
-                  href="https://veiculabrasilagv.com.br"
+                  href="https://universoagv.com.br"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white/40 hover:text-brand-blue-light transition-colors text-sm font-body flex items-center gap-1"
                 >
-                  veiculabrasilagv.com.br
+                  universoagv.com.br
                   <ExternalLink className="w-3 h-3" />
                 </a>
               </li>
@@ -86,10 +86,24 @@ export default function Footer() {
 
         <div className="mt-12 pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-white/30 text-xs font-body">
-            © {new Date().getFullYear()} Veicula Brasil AGV — Todos os direitos reservados.
+            © {new Date().getFullYear()} Universo AGV — Todos os direitos reservados.
           </p>
           <p className="text-white/20 text-xs font-body">
             Proteção Veicular em todo o Brasil
+          </p>
+        </div>
+
+        {/* Legal sections */}
+        <div id="politica-privacidade" className="mt-12 pt-8 border-t border-white/5">
+          <h5 className="font-heading font-bold text-white/50 text-xs uppercase tracking-wider mb-3">Política de Privacidade</h5>
+          <p className="text-white/25 text-xs leading-relaxed font-body max-w-4xl">
+            A Universo AGV respeita a sua privacidade. Os dados informados no formulário de cotação (nome, telefone, e-mail, cidade, modelo e ano do veículo) são utilizados exclusivamente para contato comercial e elaboração de proposta de proteção veicular. Não compartilhamos seus dados com terceiros sem sua autorização. Em conformidade com a Lei Geral de Proteção de Dados (LGPD — Lei nº 13.709/2018). Para exercer seus direitos, entre em contato pelo WhatsApp (61) 98599-1662.
+          </p>
+        </div>
+        <div id="termos-de-uso" className="mt-6 pt-6 border-t border-white/5">
+          <h5 className="font-heading font-bold text-white/50 text-xs uppercase tracking-wider mb-3">Termos de Uso</h5>
+          <p className="text-white/25 text-xs leading-relaxed font-body max-w-4xl">
+            Este site tem caráter informativo e comercial. A Universo AGV é uma associação de proteção veicular. Os planos ofertados são programas de proteção mútua entre associados, não constituindo seguro nos termos do art. 757 do Código Civil Brasileiro nem sendo regulados pela SUSEP. Os benefícios descritos estão sujeitos às condições do contrato de adesão e ao regulamento interno da associação, que devem ser consultados antes da contratação.
           </p>
         </div>
       </div>

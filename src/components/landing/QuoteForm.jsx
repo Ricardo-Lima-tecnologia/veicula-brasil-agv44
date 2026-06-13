@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { pixelEvents } from "@/utils/metaPixel";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -6,7 +7,7 @@ import { Label } from "@/components/ui/label";
 import { Shield, CheckCircle2, Send } from "lucide-react";
 
 const INITIAL = {
-  nome: "", whatsapp: "", email: "", cpf: "",
+  nome: "", whatsapp: "", email: "",
   endereco: "", modelo: "", ano: "",
 };
 
@@ -20,10 +21,14 @@ export default function QuoteForm() {
     e.preventDefault();
     setSubmitted(true);
 
+    pixelEvents.lead({
+      content_name: "Cotação Proteção Veicular — Formulário",
+    });
+
     const msg = encodeURIComponent(
-      `Olá, gostaria de iniciar minha cotação de proteção veicular.\n\n` +
+      `Olá! Vi o anúncio da Universo AGV e gostaria de solicitar uma cotação de proteção veicular.\n\n` +
       `Nome: ${form.nome}\nWhatsApp: ${form.whatsapp}\nE-mail: ${form.email}\n` +
-      `CPF: ${form.cpf}\nEndereço: ${form.endereco}\n` +
+      `Endereço: ${form.endereco}\n` +
       `Veículo: ${form.modelo} ${form.ano}`
     );
 
@@ -36,8 +41,7 @@ export default function QuoteForm() {
     { key: "nome", label: "Nome Completo", type: "text", placeholder: "Seu nome completo" },
     { key: "whatsapp", label: "WhatsApp", type: "tel", placeholder: "(00) 00000-0000" },
     { key: "email", label: "E-mail", type: "email", placeholder: "seu@email.com" },
-    { key: "cpf", label: "CPF", type: "text", placeholder: "000.000.000-00" },
-    { key: "endereco", label: "Endereço", type: "text", placeholder: "Sua cidade e estado", full: true },
+    { key: "endereco", label: "Cidade e Estado", type: "text", placeholder: "Ex: Brasília - DF", full: true },
     { key: "modelo", label: "Modelo do Veículo", type: "text", placeholder: "Ex: Honda Civic 2023" },
     { key: "ano", label: "Ano do Veículo", type: "text", placeholder: "Ex: 2023" },
   ];
@@ -70,7 +74,7 @@ export default function QuoteForm() {
               {[
                 "Proteção contra roubo, furto e colisão",
                 "Assistência 24h em todo o Brasil",
-                "Economia de até 60% vs seguro tradicional",
+                "Custo mais acessível que o seguro tradicional",
                 "Ativação em até 24 horas",
               ].map((item) => (
                 <div key={item} className="flex items-center gap-3">

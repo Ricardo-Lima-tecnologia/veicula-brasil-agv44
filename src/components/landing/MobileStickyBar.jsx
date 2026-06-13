@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import { pixelEvents } from "@/utils/metaPixel";
 
-const WA_LINK = "https://wa.me/5561985991662?text=Ol%C3%A1%2C%20gostaria%20de%20iniciar%20minha%20cota%C3%A7%C3%A3o%20de%20prote%C3%A7%C3%A3o%20veicular.";
+const WA_LINK = "https://wa.me/5561985991662?text=Ol%C3%A1%21%20Vi%20o%20an%C3%BAncio%20da%20Universo%20AGV%20e%20gostaria%20de%20solicitar%20uma%20cota%C3%A7%C3%A3o%20de%20prote%C3%A7%C3%A3o%20veicular.";
 
 export default function MobileStickyBar() {
   const [visible, setVisible] = useState(false);
@@ -35,7 +36,7 @@ export default function MobileStickyBar() {
           }}
         >
           {/* WhatsApp button */}
-          <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="flex-1">
+          <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="flex-1" onClick={() => pixelEvents.contact({ content_name: "WhatsApp Barra Mobile" })}>
             <button
               className="w-full h-14 rounded-xl font-bold text-white text-sm flex items-center justify-center gap-2 transition-all active:scale-95"
               style={{

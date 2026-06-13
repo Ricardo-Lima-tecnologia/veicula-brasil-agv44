@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { CheckCircle2, Phone, Shield, Clock, MapPin, Star, ChevronDown, ArrowRight } from "lucide-react";
+import { pixelEvents } from "@/utils/metaPixel";
 
 const FAMILY_IMG = "https://media.base44.com/images/public/69fd4610dc407e0f852436ab/65c17eb34_generated_image.png";
 
@@ -88,7 +89,7 @@ export default function HeroSection() {
             >
               <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
               <span className="text-white/80 text-xs font-semibold tracking-widest uppercase">
-                +10.000 Veículos Protegidos
+                +5.000 Veículos Protegidos
               </span>
             </motion.div>
 
@@ -170,9 +171,10 @@ export default function HeroSection() {
 
               {/* Secondary — WhatsApp */}
               <a
-                href="https://wa.me/5561985991662?text=Ol%C3%A1%2C%20gostaria%20de%20iniciar%20minha%20cota%C3%A7%C3%A3o%20de%20prote%C3%A7%C3%A3o%20veicular."
+                href="https://wa.me/5561985991662?text=Ol%C3%A1%21%20Vi%20o%20an%C3%BAncio%20da%20Universo%20AGV%20e%20gostaria%20de%20solicitar%20uma%20cota%C3%A7%C3%A3o%20de%20prote%C3%A7%C3%A3o%20veicular."
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => pixelEvents.contact({ content_name: "WhatsApp Hero" })}
                 className="group relative overflow-hidden px-7 py-5 rounded-xl font-heading font-semibold text-sm sm:text-base text-white flex items-center justify-center gap-3 transition-all duration-300 hover:scale-[1.05]"
                 style={{ background: "linear-gradient(135deg, #22C55E 0%, #15803D 100%)", boxShadow: "0 8px 36px rgba(22,163,74,0.55), 0 2px 8px rgba(0,0,0,0.25)" }}
               >
@@ -239,7 +241,7 @@ export default function HeroSection() {
               <div className="relative rounded-3xl overflow-hidden shadow-[0_40px_80px_rgba(0,0,0,0.5)]">
                 <img
                   src={FAMILY_IMG}
-                  alt="Família protegida pela Veicula Brasil AGV"
+                  alt="Família protegida pela Universo AGV — Proteção Veicular"
                   className="w-full h-[300px] sm:h-[360px] lg:h-[420px] object-cover"
                 />
                 {/* Inner dark overlay at bottom */}
