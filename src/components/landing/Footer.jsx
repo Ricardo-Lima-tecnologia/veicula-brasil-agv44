@@ -42,7 +42,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-center gap-2 text-white/75 text-sm">
                 <Phone className="w-4 h-4 text-brand-blue-light flex-shrink-0" />
-                <span>WhatsApp: (61) 9857-1690</span>
+                <span>WhatsApp: (61) 99857-1690</span>
               </li>
               <li className="flex items-center gap-2 text-white/75 text-sm">
                 <Mail className="w-4 h-4 text-brand-blue-light flex-shrink-0" />
@@ -97,7 +97,7 @@ export default function Footer() {
         <div id="politica-privacidade" className="mt-12 pt-8 border-t border-white/5">
           <h5 className="font-heading font-bold text-white/50 text-xs uppercase tracking-wider mb-3">Política de Privacidade</h5>
           <p className="text-white/25 text-xs leading-relaxed font-body max-w-4xl">
-            A Universo AGV respeita a sua privacidade. Os dados informados no formulário de cotação (nome, telefone, e-mail, cidade, modelo e ano do veículo) são utilizados exclusivamente para contato comercial e elaboração de proposta de proteção veicular. Não compartilhamos seus dados com terceiros sem sua autorização. Em conformidade com a Lei Geral de Proteção de Dados (LGPD — Lei nº 13.709/2018). Para exercer seus direitos, entre em contato pelo WhatsApp (61) 98599-1662.
+            A Universo AGV respeita a sua privacidade. Os dados informados no formulário de cotação (nome, telefone, e-mail, cidade, modelo e ano do veículo) são utilizados exclusivamente para contato comercial e elaboração de proposta de proteção veicular. Não compartilhamos seus dados com terceiros sem sua autorização. Em conformidade com a Lei Geral de Proteção de Dados (LGPD — Lei nº 13.709/2018). Para exercer seus direitos, entre em contato pelo WhatsApp (61) 99857-1690.
           </p>
         </div>
         <div id="termos-de-uso" className="mt-6 pt-6 border-t border-white/5">

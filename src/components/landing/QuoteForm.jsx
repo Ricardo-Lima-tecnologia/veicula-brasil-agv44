@@ -33,7 +33,7 @@ export default function QuoteForm() {
     );
 
     setTimeout(() => {
-      window.open(`https://wa.me/556198571690?text=${msg}`, "_blank");
+      window.open(`https://wa.me/5561998571690?text=${msg}`, "_blank");
     }, 1500);
   };
 

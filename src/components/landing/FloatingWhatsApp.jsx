@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { pixelEvents } from "@/utils/metaPixel";
 
-const WA_LINK = "https://wa.me/556198571690?text=Ol%C3%A1%21%20Vi%20o%20an%C3%BAncio%20da%20Universo%20AGV%20e%20gostaria%20de%20solicitar%20uma%20cota%C3%A7%C3%A3o%20de%20prote%C3%A7%C3%A3o%20veicular.";
+const WA_LINK = "https://wa.me/5561998571690?text=Ol%C3%A1%21%20Vi%20o%20an%C3%BAncio%20da%20Universo%20AGV%20e%20gostaria%20de%20solicitar%20uma%20cota%C3%A7%C3%A3o%20de%20prote%C3%A7%C3%A3o%20veicular.";
 
 export default function FloatingWhatsApp() {
   return (
