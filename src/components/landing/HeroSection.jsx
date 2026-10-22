@@ -89,7 +89,7 @@ export default function HeroSection() {
             >
               <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
               <span className="text-white/80 text-xs font-semibold tracking-widest uppercase">
-                +5.000 Veículos Protegidos
+                +1 Milhão de Veículos Protegidos
               </span>
             </motion.div>
 
@@ -206,7 +206,7 @@ export default function HeroSection() {
                 ))}
               </div>
               <span className="text-white/80 text-sm font-body">
-                4.9 — Mais de <span className="text-white font-semibold">2.000 avaliações</span>
+                Com uma nota média consolidada de 4.9 de 5 estrelas.
               </span>
             </motion.div>
           </motion.div>

@@ -35,7 +35,7 @@ const TESTIMONIALS = [
 ];
 
 const TRUST_STATS = [
-  { icon: Users, value: "+5.000", label: "Clientes Protegidos" },
+  { icon: Users, value: "+1 Milhão", label: "Clientes Protegidos" },
   { icon: MapPin, value: "Todo Brasil", label: "Cobertura Nacional" },
   { icon: Zap, value: "Rápido", label: "Suporte Ágil" },
   { icon: Clock, value: "24h", label: "Proteção Contínua" },
@@ -329,8 +329,7 @@ export default function TestimonialsSection() {
               ))}
             </div>
             <div className="h-4 w-px bg-white/20" />
-            <span className="text-white font-bold text-lg">4.9</span>
-            <span className="text-white/80 text-sm">— Mais de 2.000 avaliações</span>
+            <span className="text-white/80 text-sm">Com uma nota média consolidada de 4.9 de 5 estrelas.</span>
           </div>
         </motion.div>
 

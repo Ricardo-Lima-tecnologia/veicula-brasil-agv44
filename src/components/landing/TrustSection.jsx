@@ -58,7 +58,7 @@ const SERVICES = [
 ];
 
 const TRUST_PILLS = [
-  "+5.000 Veículos Protegidos",
+  "+1 Milhão de Veículos Protegidos",
   "Atendimento em Todo Brasil",
   "Proteção 24h",
   "Suporte Rápido e Humanizado",
